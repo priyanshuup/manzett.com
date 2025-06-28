@@ -1,0 +1,748 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background: #fff;
+    color: #333;
+    height: 100%;
+}
+
+@font-face {
+    font-family: 'Playfair-Display-Italic';
+    src: url('../fonts/PlayfairDisplay-Italic-VariableFont_wght.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Playfair-Display';
+    src: url('../fonts/PlayfairDisplay-VariableFont_wght.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'InterUcc73';
+    src: url('../fonts/inter-ucc73.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'spacegrotesk';
+    src: url('../fonts/spacegrotesk.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+
+main {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #ffF6F1;
+}
+
+header {
+    /* margin: 10px 0; */
+    padding: 10px 35px;
+    width: 100%;
+}
+
+nav{
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid rgb(202, 189, 189);
+    /* background-color: rebeccapurple; */
+}
+
+nav .logo{
+    height: 50px;
+    width: 200px;
+    /* background-color: red; */
+}
+
+nav .logo img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+  object-position: center;  
+}
+
+
+
+nav a {
+    text-decoration: none;
+    color: black;
+    /* Or whatever color you prefer */
+    font-size: 1.4rem;
+    font-family: 'Playfair-Display';
+    font-weight:500;
+    margin-right:15px;
+    /* background-color: green; */
+}
+
+
+nav a:hover {
+    text-decoration: underline;
+    color: #f44336;
+}
+
+
+.book-now-btn {
+    background: linear-gradient(to right, #f44336, #ff9800);
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    font-family: 'Playfair-Display';
+    text-wrap: nowrap;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  .book-now-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+  }
+  
+  .hero {
+    position: relative;
+    height: 90vh;
+    width: 100%;
+    padding: 0 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #FFF6F1;
+    background-image: url("../images/background/Ask-Manzett-Wesite-Out-Line (1).png");
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+  }
+  
+  .hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #FFF6F1;
+    opacity: 0.8; /* adjust to control transparency */
+    z-index: 1;
+  }
+  
+  /* ensure hero content stays above overlay */
+  .hero > * {
+    position: relative;
+    z-index: 2;
+  }
+  
+
+  .hero .hero-content{
+    padding: 0 20px;
+  }
+
+  .hero .hero-content h1{
+    font-size: 5rem;
+    margin: 0;
+    padding: 0 10px;
+    text-wrap: nowrap;
+    color: #f44336;
+    line-height:5rem;
+    font-family: 'Playfair-Display-Italic';
+  }
+
+  .hero .hero-content h2{
+    font-size: 3rem;
+    margin: 0;
+    margin-top: 15px;
+    color: #451f1c;
+    line-height:4rem;
+    font-weight: 300;
+    font-family: 'Playfair-Display';
+  }
+
+  .hero .manzett-portfolio-image{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    /* background-color: green; */
+    align-items: center;
+    justify-content: center;
+  
+}
+
+.hero .profile-image {
+    height: 100%;
+    width: 100%;
+    background-image: url("../images/background/Infographic\ 1.png");
+    background-size: contain;
+    background-position:top;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    background-repeat: no-repeat;
+    justify-content: center;
+    /* background-color: rgb(73, 153, 51); */
+  }
+
+  .hero .profile-image::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #FFF6F1;
+    opacity: 0.5; /* adjust to control transparency */
+    z-index: 1;
+  }
+  .hero .profile-image .profile-bg {
+    height: 100%;
+    width: 300px;
+    z-index: 9;
+    /* background-color: rgb(73, 153, 51); */
+  }
+  
+  .hero .profile-image .profile-bg img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center 20vh;
+  }
+  
+
+  .customer-service{
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .customer-service .services{
+    height: 50vh;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to bottom, #7e0000, #b30000);
+    border-radius: 10px;
+    gap: 25px;
+    padding: 25px;
+  }
+
+  .customer-service .icon-and-text{
+    height: 200px;
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+    /* background-color: green; */
+  }
+
+  .customer-service .icon-and-text h3{
+    font-size: 1rem;
+    font-family: 'Playfair-Display';
+    text-wrap: nowrap;
+    color: white;
+  }
+
+  .customer-service .icon-and-text .icon{
+    height: 80px;
+    width: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: beige;
+  }
+
+  .customer-service .icon-and-text .icon svg{
+    color: #451f1c;
+  }
+
+  .customer-service .experence-expertise{
+    /* width: 70%; */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    gap: 20px;
+  }
+
+  .customer-service .experence-expertise h3{
+    font-size: 1.3rem;
+    padding: 20px;
+    font-family: 'Playfair-Display';
+    background-color:rgb(225, 167, 92);
+    border-radius: 10px;
+  }
+
+  .know-about-manzett{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: rebeccapurple; */
+    padding: 0 30px;
+  }
+
+  .know-about-manzett .content{
+    padding: 0 45px;
+    width: 50%;
+  }
+
+  .know-about-manzett .content h1{
+    font-size: 4rem;
+    line-height: 4.5rem;
+    font-family: 'Playfair-Display';
+    color: #7e0000;
+  }
+
+  .know-about-manzett .content strong{
+    font-size: 4.5rem;
+    line-height: 4.5rem;
+    font-family: 'Playfair-Display-Italic';
+    color: brown;
+  }
+
+  .know-about-manzett .content p{
+    margin-top: 10px;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    text-align:justify;
+    font-family: 'Playfair-Display';
+  }
+
+  .know-about-manzett .backgroundImage{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .know-about-manzett .backgroundImage {
+    height: 100%;
+    width: 50%;
+    background-image: url("../images/background/b0caadeb87a61253c13e2ad139948016.png");
+    background-size: contain;
+    background-position:bottom;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    background-repeat: no-repeat;
+    justify-content: center;
+    /* background-color: rgb(73, 153, 51); */
+  }
+
+  .know-about-manzett .backgroundImage .background {
+    height: 100%;
+    width: 400px;
+    z-index: 9;
+    /* background-color: rgb(73, 153, 51); */
+  }
+  
+  .know-about-manzett .backgroundImage .background img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: top;
+  }
+
+  .card-section{
+    /* height: 100vh; */
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding:50px 75px;
+    /* background-color: #ff9800; */
+  }
+
+  .card-section h1{
+    font-size: 3rem;
+    font-family: "Playfair-Display";
+    color: #7e0000;
+    font-weight: 800;
+  }
+
+  .card-section strong{
+    font-size: 3.5rem;
+    font-weight: bolder;
+    font-family: "Playfair-Display-Italic";
+    color: #f44336;
+  }
+
+  .card-section .cards-grid{
+    margin-top: 25px;
+    height: 100%;
+    width: 100%;
+    gap: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 10px;
+    /* background-color: green; */
+  }
+
+  .card-section .cards-grid .card{
+    height: 230px;
+    width: 230px;
+    /* background-color: red; */
+    /* border: 2px solid black; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('../images/background/7956279.png');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    text-align: center;
+  }
+
+  .card-section .cards-grid .card h2{
+    font-size: 1.8rem;
+
+  }
+ 
+  .experience-work-short {
+    position: relative;
+    /* height: 60vh; */
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 20px;
+    background-color: #7e0000;
+    padding: 70px;
+    overflow: hidden;
+  }
+  
+  .experience-work-short::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url("../images/background/Ask-Manzett-Wesite-Out-Line (1).png");
+    background-size: cover;
+    background-position: center;
+    filter: grayscale(100%) brightness(0);
+    opacity: 0.4;
+    z-index: 1;
+  }
+  
+  .experience-work-short > * {
+    position: relative;
+    z-index: 2;
+  }
+  
+  .experience-work-short .short-div{
+    height: 220px;
+    width: 240px;
+    border-radius: 10px;
+    background-color: beige;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-family: 'Playfair-Display';
+  }
+
+  .experience-work-short .short-div strong{
+    font-size: 3.5rem;
+  }
+
+  .booking-details-brief{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #F4EBE6;
+    font-family: 'Playfair-Display';
+  }
+
+  .booking-details-brief .booking-contents{
+    width: 60%;
+    padding: 30px 60px;
+  }
+
+  .booking-details-brief .booking-contents h2{
+    font-size: 2rem;
+    font-weight: 400;
+    text-wrap: nowrap;
+    line-height: 2.5rem;
+    color: #b30000;
+  }
+
+  .booking-details-brief .booking-contents strong{
+    font-size: 3rem;
+    font-family: 'Playfair-Display-Italic';
+    color: #b30000;
+  }
+
+  .booking-details-brief .booking-contents p{
+    margin: 10px 0;
+    font-size: 1.1rem;
+    text-align: justify;
+    line-height: 1.5rem;
+  }
+  .booking-details-brief .booking-contents h3{
+    font-size: 1.8rem;
+    line-height: 2.5rem;
+    font-family: 'Playfair-Display-Italic';
+    color: #b30000;
+  }
+
+  .booking-details-brief .manzett-image-div{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: red; */
+    background-image: url('../images/background/suneffect-halg-bg.png');
+    background-position:right 20px;
+    background-size: cover;
+  }
+
+  .booking-details-brief .manzett-image-div .image{
+    height: 100%;
+    width: 100%;
+    /* background-color: green; */
+  }
+  .booking-details-brief .manzett-image-div .image img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    object-position: center;
+  }
+
+  /* main .curve-bg {
+    position: relative;
+    top: 0;
+    height: 10vh;
+    width: 100%;
+    z-index: -1;
+  } */
+  
+
+  .client-review-testimonials{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Playfair-Display';
+    flex-direction: column;
+    background-color: #e7c188;
+    padding: 50px;
+    gap: 30px;
+  }
+  
+
+  .client-review-testimonials .review-header{
+    text-align: start;
+    width: 100%;
+    /* background-color: rebeccapurple; */
+  }
+
+  .client-review-testimonials .review-header h1{
+    position: relative;
+    font-size: 2.3rem;
+    font-weight: 800;
+    left: 30px;
+    color: #451f1c;
+  }
+
+  .client-review-testimonials .review-header h1 strong{
+    font-family: 'Playfair-Display-Italic';
+    color: #b30000;
+  }
+
+  .client-review-testimonials .testimonial-main{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+  }
+
+  .client-review-testimonials .testimonial-review-card{
+    height: 320px;
+    width: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: white;
+    padding: 0 10px;
+    gap: 20px;
+    flex-direction: column;
+      background-color: #7e0000;
+      /* background-image: url("../images/background/Infographic\ 2.png"); */
+      background-position: center;
+      background-size: contain;
+    text-align: center;
+  }
+
+
+  .client-review-testimonials .testimonial-review-card .review-text h3{
+    color: beige;
+  }
+  .client-review-testimonials .testimonial-review-card .review-text p{
+    color: white;
+    font-size: 0.7rem;
+    margin: 5px 0;
+  }
+footer {
+    width: 100%;
+    bottom: 0px;
+    color: #fff;
+    background-color: #7e0000;
+    font-family: 'Playfair-Display';
+}
+
+footer h2{
+    position: relative;
+    top: -5vh;
+    font-size: 1.8rem;
+    background-color: #ecd6b3;
+    color: #7e0000;
+    padding: 10px 20px;
+    font-weight: bolder;
+    border-radius: 5px;
+    border: 2px solid #411212;
+}
+
+footer .footer-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+footer .footer-container .middle-content-wrapper{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    /* gap: 10px; */
+    /* background-color: rebeccapurple; */
+}
+
+footer .footer-container .logo{
+    height: 250px;
+    width: 400px;
+    /* background-color: green; */
+}
+footer .footer-container .logo img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    object-position: center;
+}
+
+footer .footer-container .middle-content-wrapper .premium-and-contact-wrapper{
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 20px;
+}
+footer .footer-container .middle-content-wrapper .premimum-services h3{
+    font-size: 1.5rem;
+}
+
+footer .footer-container .middle-content-wrapper .premium-and-contact-wrapper .contact-details h3{
+    font-size: 1.5rem;
+}
+footer .footer-container .middle-content-wrapper .premimum-services ul{
+    list-style: none;
+    margin-top: 5px;
+    cursor: pointer;
+    font-size: 1.3rem;
+}
+footer .footer-container .middle-content-wrapper .contact-details p{
+    list-style: none;
+    margin-top: 5px;
+    cursor: pointer;
+    font-size: 1.3rem;
+
+}
+
+.social-media {
+    width: 100%;
+    margin-top: 10px;
+    /* background-color: #ff9800; */
+  }
+  
+  .social-icons {
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+    flex-wrap: wrap;
+  }
+  
+  .social-icons a img {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s ease;
+  }
+  
+  .social-icons a img:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+  }
+
+  .services-and-policy{
+    padding: 10px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .services-and-policy ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    list-style: none;
+    gap: 20px;
+    margin: 10px;
+    cursor: pointer;
+  }
+  
+  .services-and-policy ul li{
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  
+
+
+
