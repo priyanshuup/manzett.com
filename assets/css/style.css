@@ -135,7 +135,8 @@ nav a:hover {
     background-color: #FFF6F1;
     background-image: url("../images/background/cancer-bg-overlay2.svg");
     background-position: center;
-    background-size: contain;
+    background-repeat: no-repeat;
+    background-size: cover;
     overflow: hidden;
   }
   
@@ -456,7 +457,7 @@ object-position: center 300px;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    background-color: #F2EEEB;
+     background-color: #FFF6F1;
     padding:50px 75px;
   }
 
@@ -500,6 +501,7 @@ object-position: center 300px;
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     text-align: center;
   }
 
@@ -566,7 +568,7 @@ object-position: center 300px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: #FFF6F1;
+    background-color: #F2EEEB;
     font-family: 'Playfair-Display';
   }
 
