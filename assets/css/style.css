@@ -124,9 +124,9 @@ nav a:hover {
     box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
   }
   
-  .hero {
+  .hero, .hero-second {
     position: relative;
-    height: 80vh;
+    height: 90vh;
     width: 100%;
     padding: 0 40px;
     display: flex;
@@ -139,7 +139,7 @@ nav a:hover {
     background-size: cover;
     overflow: hidden;
   }
-  
+
   .hero::before {
     content: "";
     position: absolute;
@@ -159,7 +159,7 @@ nav a:hover {
   }
   
 
-  .hero .hero-content{
+  .hero .hero-content, .hero-second{
     min-width: 40%;
     padding: 0 20px;
     /* bottom: 5vh; */
@@ -252,6 +252,148 @@ object-position: center 300px;
 }
 
 
+  .hero-second{
+     position: relative;
+    height: 90vh;
+    width: 100%;
+    padding: 0 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #ffeec4;
+    background-image: url("../images/background/Ask-Manzett-Wesite--2.jpg");
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+  }
+
+    .hero-second::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #FFF6F1;
+    opacity: 0.4; /* adjust to control transparency */
+    z-index: 1;
+  }
+  
+  /* ensure hero content stays above overlay */
+  .hero-second > * {
+    position: relative;
+    z-index: 2;
+  }
+
+.heroswipe .hero-second-content{
+  text-align: center;
+  /* background-color: green; */
+}
+.heroswipe h2{
+ font-size: 3rem;
+    margin: 0;
+    color: #EC2826;
+    line-height:4rem;
+    font-weight: 600;
+  position: relative;
+  bottom: 20px;
+      font-family: 'Playfair-Display-Italic';
+}
+
+.hero-second .hero-second-content p{
+      font-size: 1.2rem;
+    color: #EC2826;
+    font-weight: 300;
+    letter-spacing: 1px;
+    line-height: 1.5rem;
+    font-family: 'Playfair-Display';
+}
+
+.hero-second .hero-second-content strong{
+     font-size: 1.2rem;
+    color: #8C0909;
+    font-weight: 600;
+    font-family: 'Playfair-Display';
+}
+
+.hero-second .booking-buttons{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  margin: 20px 0px;
+}
+
+.hero-second .booking-buttons button{
+  background-color: #8C0909;
+  padding: 5px 10px;
+  color: #FFF6F1;
+    font-family: 'Playfair-Display';
+    border: none;
+    border-radius: 5px;
+}
+.swiper-button-prev,
+.swiper-button-next {
+  color: black !important;
+  padding: 15px;
+  font-size: 12px !important;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  z-index: 10;
+  transform: translateY(-50%);
+  transition: background-color 0.3s, opacity 0.3s;
+  opacity: 0.7;
+}
+
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+  opacity: 1;
+}
+
+.swiper-button-prev {
+  left: 20px;
+}
+
+.swiper-button-next {
+  right: 20px;
+}
+
+
+.hero-swiper-pagination {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 30px; /* adjust as needed */
+  z-index: 10;
+  display: flex;
+  padding: 0 5px;
+  /* gap: 3px; */
+}
+
+
+
+.hero-swiper-pagination .swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background-color: #8C0909;
+  opacity: 1;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.hero-swiper-pagination .swiper-pagination-bullet-active {
+  background-color: #EC2826; /* Active bullet background color */
+  transform: scale(1.4);
+}
+
+.slider-next-button{
+  color: green;
+}
 
   .customer-service{
     /* height: 80vh; */
@@ -636,76 +778,49 @@ object-position: center 300px;
     width: 100%;
     z-index: -1;
   } */
+
+ .testimonial-main {
+  height: 100vh;
+
+      width: 100%;
+      /* max-width: 1200px; */
+      background-color: #FFF6F1;
+      margin: 0 auto;
+      padding: 40px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .testimonial-review-card {
+      color: #fff;
+      font-size: 24px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 300px;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    .swiper-slide img{
+      height: 100%;
+      width : 100%;
+      object-fit: contain;
+      object-position: center;
+    }
+
+    .swiper-pagination-bullet {
+      background: #888;
+      opacity: 1;
+    }
+    .swiper-pagination-bullet-active {
+      background: #007bff;
+    }
+
   
-
-  .client-review-testimonials{
-    height: 100vh;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family: 'Playfair-Display';
-    flex-direction: column;
-    background-color: #ffeec4;
-    padding: 50px;
-    gap: 30px;
-  }
-  
-
-  .client-review-testimonials .review-header{
-    text-align: start;
-    width: 100%;
-    /* background-color: rebeccapurple; */
-  }
-
-  .client-review-testimonials .review-header h1{
-    position: relative;
-    font-size: 2.3rem;
-    font-weight: 800;
-    left: 30px;
-    color: #8C0909;
-  }
-
-  .client-review-testimonials .review-header h1 strong{
-    font-family: 'Playfair-Display-Italic';
-    color: #EC2826;
-  }
-
-  .client-review-testimonials .testimonial-main{
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 40px;
-  }
-
-  .client-review-testimonials .testimonial-review-card{
-    height: 320px;
-    width: 250px;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    color: #FFF6F1;
-    padding: 0 10px;
-    gap: 20px;
-    flex-direction: column;
-      background-color: #8C0909;
-      background-image: url("../images/testimoni/Testomoni-1.svg");
-      background-position: center;
-      background-size: contain;
-    text-align: center;
-  }
-
-
-  .client-review-testimonials .testimonial-review-card .review-text h3{
-    color: #FFF6F1;
-  }
-  .client-review-testimonials .testimonial-review-card .review-text p{
-    color: #FFF6F1;
-    font-size: 0.7rem;
-    margin: 5px 0;
-  }
 footer {
+  margin-top: 40px;
     width: 100%;
     bottom: 0px;
       background-color: #8C0909;
