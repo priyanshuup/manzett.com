@@ -945,6 +945,370 @@ footer .footer-container .middle-content-wrapper .contact-details p{
   }
   
 
+  /* about section css starts here  */
+
+  .about{
+    height: auto;
+    overflow: hidden;
+  }
+
+  .about .about-main{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 10px;
+    text-align: center;
+    /* background-color: red; */
+  }
+
+  .about .about-main h1{
+    font-size: 3.5rem;
+    color: #EC2826;
+     font-family: 'Playfair-Display-Italic';
+     line-height: 3rem;
+     font-weight: 900;
+     margin: 0 20px;
+  }
+
+  .about .about-main h1 strong{
+    font-size: 2.2rem;
+    color: #0C0C0C;
+    font-weight: bolder;
+     font-family: 'Playfair-Display';
+  }
+
+  .about-content{
+    display: flex;
+    align-content: center;
+    justify-content: space-around;
+    /* background-color: green; */
+    text-align: justify;
+    padding: 50px 50px 0 50px;
+  }
+  .about .about-main .about-content .manzett-kaushal-profile-img{
+   height: 600px;
+   width: 450px;
+   
+  }
+  .about .about-main .about-content .manzett-kaushal-profile-img img{
+   height: 100%;
+   width: 100%;
+   object-fit: cover;
+   object-position: center 200px;
+
+  }
+
+  .about-content h2{
+    font-size: 1.6rem;
+    font-family: 'Playfair-Display';
+    font-weight: 400;
+    color: #8C0909;
+    letter-spacing: 0.5px;
+  }
+
+  /* mission-and-vision code starts here */
+
+  .mission-and-vision{
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .mission-and-vision-bg{
+    height: 300px;
+    width: 550px;
+    background: #8C0909;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 25px;
+  }
+  
+  .content-images{
+    height: 100%;
+    border-radius: 25px;
+    border: 2px solid #D4B669;
+    overflow: hidden;
+    padding: 25px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .content-images .details{
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .mission-and-vision .mission-and-vision-bg .content-images .details p{
+    font-size: 1.2rem;
+    font-weight: 300;
+    line-height: 1.6rem;
+    font-family: 'Playfair-Display';
+    text-align: justify;
+    letter-spacing: 1px;
+    color: #F2EEEB;
+  }
+
+  .mission-and-vision-bg .img-and-header .image{
+    height: 70px;
+    width: 70px;
+  }
+  .mission-and-vision-bg .img-and-header .image img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    object-position: center;
+  }
+
+  .img-and-header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .img-and-header h2{
+    font-size: 2.8rem;
+    font-weight: 900;
+    font-family: 'Playfair-Display-Italic';
+    color: #F2EEEB;
+  }
+
+  .about-content h2 strong{
+    color: #EC2826;
+  }
+
+  /* choose-manzett-koushal css starts here  */
+
+  .choose-manzett-koushal{
+    height: 90vh;
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 100px;
+
+  }
+
+  .choose-manzett-koushal h2{
+    font-size: 4rem;
+    font-family: 'Playfair-Display-Italic';
+    font-weight: 900;
+    color: #EC2826;
+  }
+
+  .choose-manzett-koushal .features{
+    width: 100%;
+  }
+
+  .choose-manzett-koushal .features .features-list li{
+    font-size: 1.8rem;
+    font-family: "Playfair-Display";
+    font-weight: 500;
+    color: #8C0909;
+    list-style: none;
+    margin: 0 20px;
+    letter-spacing: 1px;
+  }
+
+ .awards-and-recognition {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  /* background-color: #007bff; */
+  /* padding: 20px; */
+  box-sizing: border-box;
+}
+.awards-and-recognition .swiper-button-prev, .swiper-button-next {
+    color: white !important;
+}
+ .awards-and-recognition .swiper-button-next:after, .swiper-button-prev:after{
+  font-size: 20px !important;
+  font-weight: bolder !important;
+}
+
+.awards-and-recognition .myAwardsSwiper .swiper-slide{
+  display: flex !important;
+}
+
+
+
+.swiper {
+  width: 100%;
+ 
+}
+
+.awards-img-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #8C0909;
+  padding: 25px;
+  gap: 30px;
+}
+
+.awards-img-content .awards-image {
+  height: 350px;
+  width: 450px;
+  border-radius: 25px;
+  background-color: #D4B669;
+  overflow: hidden;
+}
+
+.awards-img-content .awards-image img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.awards-content {
+  color: #fff;
+  max-width: 600px;
+  padding: 0 15px;
+}
+
+.awards-content h3 {
+  font-size: 2rem;
+  font-family: 'Playfair-Display-Italic';
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+}
+
+.awards-content p {
+  font-size: 1rem;
+  line-height: 1.5;
+  font-family: 'Playfair-Display';
+}
+
+.manzett-koushal-words{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.words-content{
+  width: 80%;
+  font-family: 'Playfair-Display';
+  background-color: #fedcb0;
+  padding: 40px;
+  border-radius: 15px;
+}
+
+.words-content p{
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.words-content strong{
+    font-size: 2rem;
+  font-weight: 500;
+  color: #8C0909;
+  font-family: 'Playfair-Display-Italic';
+}
+.sun-image{
+  height: 300px;
+  background-color: #000;
+}
+
+  .faq-review-section {
+    width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  background: #fdf4f0;
+  padding: 50px 100px;
+  font-family: "Georgia", serif;
+}
+
+.faq, .review {
+  flex: 1 1 45%;
+}
+
+.faq h2, .review h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-wrap: nowrap;
+  color: #000;
+    font-family: 'Playfair-Display';
+
+}
+
+/* FAQ styles */
+.faq-item {
+  margin-bottom: 15px;
+}
+
+.faq-question {
+  width: 90%;
+  background: #F2EEEB;
+  border: 2px solid #000;
+  border-radius: 8px;
+  padding: 10px;
+  font-size: 1.2rem;
+  text-align: left;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'Playfair-Display';
+;
+  transition: all 0.3s ease;
+}
+
+.faq-question:hover {
+  background: #fedcb0;
+}
+
+.arrow {
+  font-size: 1.5rem;
+  transform: rotate(0deg);
+  transition: transform 0.3s;
+}
+
+.faq-item.active .arrow {
+  transform: rotate(90deg);
+}
+
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  font-size: 1rem;
+  padding: 0 10px;
+  color: #333;
+  transition: max-height 0.3s ease;
+}
+
+.faq-item.active .faq-answer {
+  max-height: 500px;
+  padding-top: 10px;
+}
+
+/* Review styles */
+.review-card {
+  height: 150px;
+}
+
+.review-card img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
 
 
 
