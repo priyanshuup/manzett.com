@@ -1224,6 +1224,124 @@ footer .footer-container .middle-content-wrapper .contact-details p{
   background-color: #000;
 }
 
+.appointment{
+  height: 80vh;
+  width: 100%;
+  background-image: url('../images/background/small-icons-cream-bg.jfif');
+  background-position: center;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.appointment-main{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.appointment-main h1{
+  font-size: 3.5rem;
+  line-height: 4rem;
+  margin: 2rem;
+  color: #8C0909;
+  font-family: 'Playfair-Display';
+  font-weight: bold;
+  text-align: end;
+}
+
+.appointment-main strong{
+  color: #EC2826;
+  font-family: 'Playfair-Display-Italic';
+  font-weight: bolder;
+}
+
+.appointment-main .appointment-content{
+  width: 60%;
+}
+
+.appointment-main .appointment-content p{
+    font-family: 'Playfair-Display';
+    font-size: 1.2rem;
+    color: #8C0909;
+    font-weight: 300;
+    letter-spacing: 0.5px;
+}
+
+.appointment-main .appointment-content strong{
+   font-family: 'Playfair-Display-Italic';
+    font-size: 1.2rem;
+    color: #8C0909;
+    font-weight: 900;
+}
+
+.appointment-main .appointment-content strong span{
+   font-family: 'Playfair-Display-Italic';
+    font-size: 1.2rem;
+    color: #EC2826;
+    font-weight: 900;
+}
+
+
+.session-importance{
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+
+.session-content{
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-direction: column;
+  background-color: green;
+}
+
+.session-content h2{
+   font-size: 3.5rem;
+  line-height: 4rem;
+  /* margin: 2rem 0; */
+  color: #8C0909;
+  font-family: 'Playfair-Display';
+  font-weight: bold;
+  text-align: start;
+}
+
+
+.session-content strong{
+  color: #EC2826;
+  font-family: 'Playfair-Display-Italic';
+  font-weight: bolder;
+}
+
+.session-content p{
+  font-weight: 900;
+  font-family: 'Playfair-Display';
+  letter-spacing: 0.5px;
+}
+
+
+.session-banner-image{
+  height: 100%;
+  width: 40%;
+  background-color: red;
+}
+
+.session-banner-image img{
+  height: 100%;
+  width: 100%;
+  object-fit:contain ;
+  object-position: center;
+}
+
+.session-benifits ul{
+  list-style: none;
+}
   .faq-review-section {
     width: 100%;
   display: flex;

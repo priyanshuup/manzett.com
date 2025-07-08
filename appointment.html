@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Appointment Manzett Koshal</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+
+    <!-- Locomotive Scroll CSS -->
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.css"> -->
+
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+
+<body>
+    <main>
+        <div id="header-placeholder"></div>
+         <section class="appointment">
+            <div class="appointment-main">
+                <h1>Discover Your Path To<br> <strong>True Happiness</strong></h1>
+                <div class="appointment-content">
+                    <p>Are You Feeling Stuck, Confused, Or Unsure About Your Next Steps In Life? Wheather It's A Relationship, Career Decision, Family Issue, Or A Recurring Pattern You Can't Explain - Your Answers Might Already Be Written In The Stars.
+                    </p>
+                    <strong>At <span>Ask Manzett Koushal</span>, We Don't Just Predict Your Future - We Help You Shape It. </strong>
+                </div>
+            </div>
+        </section>
+        <section class="session-importance">
+            <div class="session-banner-image">
+                <img src="./assets/images/background/lady-watching-zodiac-sign.png" alt="">
+            </div>
+            <div class="session-content">
+                <h2>What You'll Gain<br> <strong>From Your Session?</strong></h2>
+                <p>Each Session Is More Than A Reading. It's A Moment Of Deep Clarity.</p>
+                <div class="session-benifits">
+                    <ul class="session-benifits-list">
+                        <li><span class="icon">✔</span> Honest Accurate Insights Using KP Astrology And Tarot</li>
+                        <li><span class="icon">✔</span> Personlized Remedies You Can Actually Apply</li>
+                        <li><span class="icon">✔</span> Emotional Peace, Grounded Guidance, And Next Steps</li>
+                        <li><span class="icon">✔</span> A Safe, Confidential Space To Speak Freely</li>
+                        <li><span class="icon">✔</span> Real Answers - Not Generic Advice</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="choose-a-call">
+            <h1>Why Choose A<br> <strong>Call With Us?</strong></h1>
+            <p>You're Not Just Booking Time You're <br> Choosing Transformation</p>
+            <div class="call-benifits">
+                <ul class="call-benifits-list">
+                    <li><span class="icon">✔</span> Get To The Root Of What's Holding You Back.</li>
+                    <li><span class="icon">✔</span> Sessions Tailored 100% To Your Questions And Energy.</li>
+                    <li><span class="icon">✔</span> Guidance Supported By Vastu, Numerology, And Infinitive Reading.
+                    </li>
+                    <li><span class="icon">✔</span> A Immediate Clarity - Not Vague Predictions.</li>
+                    <li><span class="icon">✔</span> Trusted By Clients In India, UAE, UK, And Beyond.</li>
+                </ul>
+                <button>Consult Now</button>
+            </div>
+        </section>
+        <section class="consultaion-pricing">
+            <h2>Consulation Options & Pricing</h2>
+            <div class="price-catalogue">
+                <div class="silver"></div>
+                <div class="gold"></div>
+                <div class="diamond"></div>
+            </div>
+            <p>Note: All Sessions Are Done Via Whatsapp, Zoom, Or Phone.</p>
+        </section>
+        <section class="sessions-conclusion">
+            <h2>You Deserve Clarity. <strong>Let's Begin</strong></h2>
+            <h3>Thousands Have Found Peace, Direction, And Relief Through A Single Session.</h3>
+            <strong>Maybe Today Is Your Day.</strong>
+            <div class="swiper conclusionSwiper">
+                <div class="swiper-wrapper">
+                    <!-- Slide 1 -->
+                    <div class="swiper-slide conclusionSwiper-img-content">
+                        <div class="conclusionSwiper-image">
+                            <img src="./assets/images/certificate/certificate.jfif" alt="manzett-koushal-certificate">
+                        </div>
+                    </div>
+
+                    <!-- Slide 2 -->
+                    <div class="swiper-slide conclusionSwiper-img-content">
+                        <div class="conclusionSwiper-image">
+                            <img src="./assets/images/certificate/certificate.jfif" alt="manzett-koushal-certificate">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div id="footer-placeholder"></div>
+        </footer>
+    </main>
+    <script>
+        // Load reusable components (optional approach)
+        fetch("components/header.html").then(res => res.text()).then(data => {
+            document.getElementById("header-placeholder").innerHTML = data;
+        });
+        fetch("components/footer.html").then(res => res.text()).then(data => {
+            document.getElementById("footer-placeholder").innerHTML = data;
+        });
+    </script>
+    <script src="./assets/js/faq.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./assets/js/swiper.js"></script>
+</body>
+
+</html>
