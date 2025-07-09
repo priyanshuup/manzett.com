@@ -1516,6 +1516,233 @@ footer .footer-container .middle-content-wrapper .contact-details p{
   object-position: center;
 }
 
+
+.services{
+  height: 80vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #8C0909;
+}
+
+.services-content{
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.services-content h1{
+  font-size: 3.5rem;
+  font-family: 'Playfair-Display-Italic';
+  font-weight: 900;
+  color: #D4B669;
+  line-height: 4rem;
+}
+
+.services-content h1 strong{
+  font-family: 'Playfair-Display';
+  font-weight: 600;
+  color: #F2EEEB;
+}
+.services-content h2{
+  font-size: 5.5rem;
+  font-family: 'Playfair-Display-Italic';
+  font-weight: 600;
+  color: #D4B669;
+  line-height: 7rem;
+}
+
+.services-content button{
+  background-color: #D4B669;
+  padding: 4px 40px;
+  font-size: 1.5rem;
+  font-weight: 900;
+  color: #8C0909;
+  border-radius: 2px;
+  font-family: 'Playfair-Display-Italic';
+  border: none;
+}
+
+.services-offered{
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.services-banner-image{
+  height: 600px;
+  width: 500px;
+}
+
+.services-banner-image img{
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+  object-position: center;
+}
+
+.services-banner-content{
+  width: 40%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.services-banner-content h2{
+  font-size: 2.5rem;
+  line-height: 3rem;
+  font-weight: 800;
+  font-family: 'Playfair-Display';
+}
+.services-banner-content h2 strong{
+  font-size: 2.5rem;
+  line-height: 3rem;
+  font-weight: 900;
+  font-family: 'Playfair-Display-Italic';
+}
+
+.services-banner-content p{
+  margin: 20px 0;
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+  font-weight: 100;
+  font-family: 'Playfair-Display';
+}
+
+.services-banner-content button{  
+  background-color: #8C0909;
+  padding: 5px 10px;
+  color: #FFF6F1;
+    font-family: 'Playfair-Display-Italic';
+    border: none;
+    border-radius: 5px;
+}
+
+
+.core-services{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: baseline;
+  flex-direction: column;
+}
+
+.core-services h2{
+  font-size: 3rem;
+    font-family: 'Playfair-Display-Italic';
+    color: #EC2826;
+    font-weight: 900;
+}
+
+.core-services h3{
+  font-size: 4rem;
+    font-family: 'Playfair-Display';
+    color: #8C0909;
+    font-weight: 900;
+    letter-spacing: 25px;
+}
+
+.core-services-wrapper{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 40px;
+  padding: 40px 0;
+}
+
+.core-services-wrapper .core-service-card{
+  height: 600px;
+  width: 500px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.core-service-card:nth-child(4n+1),
+.core-service-card:nth-child(4n) {
+  background-color: #8C0909; /* Color A for 1st and 4th */
+}
+
+.core-service-card:nth-child(4n+2),
+.core-service-card:nth-child(4n+3) {
+  background-color: #fedcb0; /* Color B for 2nd and 3rd */
+}
+
+
+.how-it-works {
+  text-align: center;
+  padding: 60px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.how-it-works h2 {
+  font-family: 'Playfair-Display-Italic';
+  font-weight: bold;
+  font-size: 4rem;
+  color: #a01717;
+  margin-bottom: 50px;
+}
+
+.steps {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 90%;
+  gap: 30px;
+  flex-wrap: wrap;
+  padding: 0 20px;
+}
+
+.step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 250px;
+}
+
+.number-circle {
+  background-color: #a01717;
+  color: #fff;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+    font-family: 'Playfair-Display-Italic';
+  font-weight: bold;
+}
+
+.step p {
+  margin-top: 15px;
+  font-weight: bold;
+    font-family: 'Playfair-Display-Italic';
+  font-size: 1.8rem;
+  line-height: 1.4;
+  font-weight: bold;
+}
+
+.step p span {
+  font-weight: normal;
+  font-style: normal;
+}
+
+.line {
+  flex-grow: 1;
+  height: 2px;
+  background-color: #a01717;
+  max-width: 250px;
+}
+
+
   .faq-review-section {
     width: 100%;
   display: flex;
