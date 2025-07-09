@@ -820,11 +820,12 @@ object-position: center 300px;
 
   
 footer {
-  margin-top: 40px;
+  /* margin-top: 40px; */
     width: 100%;
     bottom: 0px;
       background-color: #8C0909;
     font-family: 'Playfair-Display';
+    border-top: 2px solid #F2EEEB;
 }
 
 footer h2{
@@ -837,6 +838,7 @@ footer h2{
     font-weight: bolder;
     border-radius: 5px;
     border: 2px solid #8C0909;
+    z-index: 99;
 }
 
 footer .footer-container{
@@ -1299,13 +1301,12 @@ footer .footer-container .middle-content-wrapper .contact-details p{
   align-items: flex-start;
   justify-content: space-between;
   flex-direction: column;
-  background-color: green;
 }
 
 .session-content h2{
-   font-size: 3.5rem;
+  font-size: 3.5rem;
   line-height: 4rem;
-  /* margin: 2rem 0; */
+  margin-top: 2rem;
   color: #8C0909;
   font-family: 'Playfair-Display';
   font-weight: bold;
@@ -1323,13 +1324,14 @@ footer .footer-container .middle-content-wrapper .contact-details p{
   font-weight: 900;
   font-family: 'Playfair-Display';
   letter-spacing: 0.5px;
+  font-size: 1.1rem;
+  margin: 15px 0;
 }
 
 
 .session-banner-image{
   height: 100%;
   width: 40%;
-  background-color: red;
 }
 
 .session-banner-image img{
@@ -1342,6 +1344,178 @@ footer .footer-container .middle-content-wrapper .contact-details p{
 .session-benifits ul{
   list-style: none;
 }
+
+.session-benifits ul li{
+  margin: 10px 0;
+  font-weight: 900;
+  font-family: 'Playfair-Display';
+  font-size: 1.1rem
+}
+
+.choose-a-call{
+  height: 100vh;
+  width: 100%;
+  background-image: url('../images/background/bulb.png');
+  background-position: center;
+  background-size: cover;
+  padding: 10px 150px;
+}
+
+.choose-a-call h2{
+  font-size: 3.5rem;
+  line-height: 4rem;
+  margin-top: 2rem;
+  color: #F2EEEB;
+  font-family: 'Playfair-Display';
+  font-weight: bold;
+  text-align: start;
+  letter-spacing: 0.5px;
+}
+.choose-a-call h2 strong{
+  color: #D4B669;
+  font-family: 'Playfair-Display-Italic';
+  font-weight: bolder;
+}
+
+.choose-a-call p{
+    color: #F2EEEB;
+  font-family: 'Playfair-Display-Italic';
+  font-weight: bolder;
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+  margin-top: 20px;
+}
+
+.call-benifits{
+  margin: 40px 0;
+}
+
+.call-benifits ul{
+  font-family: 'Playfair-Display';
+  color: #F2EEEB;
+  font-size: 1.2rem;
+  list-style: none;
+}
+
+.call-benifits button{
+  margin-top: 35px;
+  background-color: #D4B669;
+  padding: 8px 40px;
+  font-size: 1.5rem;
+  font-weight: 900;
+  border-radius: 5px;
+  font-family: 'Playfair-Display-Italic';
+  border: none;
+}
+
+.consultaion-pricing{
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #8C0909;
+}
+
+.consultaion-pricing h2{
+  font-size: 2rem;
+  font-family: 'Playfair-Display';
+  font-weight: 900;
+}
+
+.consultaion-pricing .price-catalogue{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+
+.consultaion-pricing .price-catalogue .catalogue-card{
+  height: 350px;
+  width: 300px;
+  margin: 40px 0;
+  background-color: #8C0909;
+  border: 2px solid #D4B669;
+  border-radius: 10px;
+}
+
+.consultaion-pricing p{
+  font-size: 1.2rem;
+  font-family: 'Playfair-Display';
+  font-weight: 800;
+  color: #D4B669;
+}
+
+.sessions-conclusion{
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #8C0909;
+}
+
+.sessions-conclusion h2{
+  font-size: 2.5rem;
+  font-family: 'Playfair-Display';
+  font-weight: 900;
+  margin-top: 20px;
+}
+
+.sessions-conclusion h3{
+  font-size: 2rem;
+  font-family: 'Playfair-Display';
+  font-weight: 500;
+  margin-top: 20px;
+}
+
+.sessions-conclusion h2 strong{
+  color: #EC2826;
+  font-family: 'Playfair-Display-Italic';
+  font-weight: 800;
+  font-size: 2.5rem;
+}
+
+.sessions-conclusion strong{
+  color: #fedcb0;
+  font-family: 'Playfair-Display-Italic';
+  font-weight: 900;
+  font-size: 2rem;
+}
+
+.swiper.conclusionSwiper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #8C0909;
+}
+
+.swiper.conclusionSwiper .swiper-wrapper {
+  padding: 100px 0;
+  /* overflow: hidden; */
+}
+
+.swiper.conclusionSwiper .swiper-slide {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.conclusionSwiper-image{
+  height: 350px;
+  width: 80%;
+}
+
+.swiper.conclusionSwiper .swiper-slide img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
   .faq-review-section {
     width: 100%;
   display: flex;
