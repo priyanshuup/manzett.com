@@ -245,11 +245,12 @@ body.no-scroll {
   align-items: center;
   justify-content: space-around;
   background-color: #FFF6F1;
-  background-image: url("../images/background/cancer-bg-overlay2.svg");
+  background-image: url("../images/background/manzett-slider.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   overflow: hidden;
+  border-bottom: 0.5px solid #b4b3b3;
 }
 
 .hero::before {
@@ -260,7 +261,7 @@ body.no-scroll {
   height: 100%;
   width: 100%;
   background-color: #FFF6F1;
-  opacity: 0.4;
+  opacity: 0.1;
   /* adjust to control transparency */
   z-index: 1;
 }
@@ -321,7 +322,7 @@ body.no-scroll {
   justify-content: center;
   /* background-color: rebeccapurple; */
 }
-
+/* 
 .hero .profile-image::before {
   content: "";
   position: absolute;
@@ -332,7 +333,7 @@ body.no-scroll {
   background-color: #FFF6F1;
   opacity: 0.5;
   z-index: 1;
-}
+} */
 
 .hero .profile-image .bg-img {
   position: absolute;
@@ -375,6 +376,7 @@ body.no-scroll {
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: 30px;
   flex-direction: column;
   background-color: #ffeec4;
   background-image: url("../images/background/Ask-Manzett-Wesite--2.jpg");
