@@ -48,7 +48,8 @@
                         <h2>Struggling with love, Career,<br> Marriage, or Peace Of Mind?</h2>
                         <div class="hero-second-content">
                             <p>With <strong>10+ years of experience and 1000+ lives guided.</strong> <br>
-                                get personalized Tarot, KP Astrology, Numerology & Vastu remedies <br> tailored for real transformation.
+                                get personalized Tarot, KP Astrology, Numerology & Vastu remedies <br> tailored for real
+                                transformation.
                             </p>
                         </div>
                         <div class="booking-buttons">
@@ -60,7 +61,7 @@
             </div>
 
             <!-- Use custom class names here -->
-             
+
             <!-- 
             <div class="swiper-button-prev"></div>
             <div class="swiper-button-next"></div> -->
@@ -107,7 +108,7 @@
                 </div>
                 <div class="short-div">
                     <h3>Certified</h3>
-                    <strong>Numerologist</strong>
+                    <strong>Astrologer</strong>
                 </div>
                 <div class="short-div">
                     <strong>Vastu</strong>
@@ -120,7 +121,7 @@
             <div class="content">
                 <h1>Meet Your <br><strong>Divine Guide</strong></h1>
                 <p>
-                    With over <strong>10 years</strong> of experience and <strong>1000+ lives</strong> transformed,
+                    With over <strong>10 years</strong> of experience and <strong>30000+ lives</strong> transformed,
                     <strong>Ask Manzett Koushal </strong> offers personal,
                     one-on-one guidance using Tarot, KP Astrology, Numerology, and Vastu.
                     <br>
@@ -155,12 +156,12 @@
                     <div class="card">
                         <h2>Kundli</h2>
                     </div>
-                    <div class="card">
+                    <!-- <div class="card">
                         <h2>Fortune Report</h2>
-                    </div>
-                    <div class="card">
+                    </div> -->
+                    <!-- <div class="card">
                         <h2>Real Life <br> Transformation</h2>
-                    </div>
+                    </div> -->
                     <div class="card">
                         <h2>Horoscope</h2>
                     </div>
@@ -168,21 +169,21 @@
         </section>
         <section class="experience-work-short">
             <div class="short-div">
-                <strong>200K</strong>
+                <strong>10K+</strong>
                 <h3>Kundli Served</h3>
             </div>
             <div class="short-div">
                 <strong>10+</strong>
-                <h3>Year's Of <br>Experience</h3>
+                <h3>Year's Of Experience</h3>
             </div>
             <div class="short-div">
-                <strong>1000+</strong>
+                <strong>30K+</strong>
                 <h3>Consultations Given</h3>
             </div>
-            <div class="short-div">
+            <!-- <div class="short-div">
                 <strong>15+</strong>
                 <h3>Awards</h3>
-            </div>
+            </div> -->
         </section>
         <section class="booking-details-brief">
             <div class="booking-contents">
@@ -200,6 +201,7 @@
                     intuitive insight—tailored uniquely to your birth chart, name, and timing.
                 </p>
                 <h3>Let astrology become a conscious part of your growth—not just once, but every day.</h3>
+                      <button>Book Now</button>
             </div>
             <div class="manzett-image-div">
                 <div class="image-bg">
@@ -248,14 +250,37 @@
         </footer>
     </main>
     <script>
-        // Load reusable components (optional approach)
-        fetch("components/header.html").then(res => res.text()).then(data => {
-            document.getElementById("header-placeholder").innerHTML = data;
-        });
-        fetch("components/footer.html").then(res => res.text()).then(data => {
-            document.getElementById("footer-placeholder").innerHTML = data;
-        });
+        fetch("components/header.html")
+            .then(res => res.text())
+            .then(data => {
+                document.getElementById("header-placeholder").innerHTML = data;
+                initializeHamburger();
+            });
+
+        fetch("components/footer.html")
+            .then(res => res.text())
+            .then(data => {
+                document.getElementById("footer-placeholder").innerHTML = data;
+            });
+
+        function initializeHamburger() {
+            const hamburger = document.getElementById("hamburger");
+            const navMenu = document.getElementById("navMenu");
+
+            if (!hamburger || !navMenu) {
+                console.error("Hamburger elements missing!");
+                return;
+            }
+
+            hamburger.addEventListener("click", () => {
+                const isActive = hamburger.classList.contains("active");
+                hamburger.classList.toggle("active", !isActive);
+                navMenu.classList.toggle("active", !isActive);
+                document.body.classList.toggle("no-scroll", !isActive);
+            });
+        }
     </script>
+
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./assets/js/swiper.js"></script>
 </body>

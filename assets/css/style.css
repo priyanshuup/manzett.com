@@ -54,54 +54,164 @@ main {
     padding: 0;
     background-color: #FFF6F1;
 }
+/* Base styles */
 
 header {
-    /* margin: 10px 0; */
-    padding: 10px 35px;
-    width: 100%;
+  width: 100%;
+  padding: 10px 35px;
 }
 
-nav{
-    position: relative;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    border-bottom: 1px solid rgb(202, 189, 189);
-    /* background-color: rebeccapurple; */
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  border-bottom: 1px solid #ceaf56;
 }
 
-nav .logo{
-    height: 100px;
-    width: 200px;
-    /* background-color: red; */
+nav .logo {
+  height: 80px;
+  width: 180px;
 }
 
 nav .logo img {
   height: 100%;
   width: 100%;
   object-fit: contain;
-  object-position: center;  
+  object-position: center;
 }
-
 
 
 nav a {
-    text-decoration: none;
-    color: black;
-    /* Or whatever color you prefer */
-    font-size: 1.4rem;
-    font-family: 'Playfair-Display';
-    font-weight:500;
-    margin-right:15px;
-    /* background-color: green; */
+  text-decoration: none;
+  color: #000;
+  font-size: 1.4rem;
+  font-family: 'Playfair-Display';
+  font-weight: 500;
+  margin-right: 30px;
 }
-
 
 nav a:hover {
-    text-decoration: underline;
-    color: #EC2826;
+  text-decoration: underline;
+  color: #EC2826;
 }
+
+.book-now-btn {
+  padding: 10px 20px;
+  background-color: #EC2826;
+  color: white;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  font-family: 'Playfair-Display';
+}
+
+/* Hamburger styling */
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  height: 25px;
+  justify-content: space-between;
+}
+
+.bar {
+  height: 3px;
+  width: 30px;
+  background-color: rgb(0, 0, 0);
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+/* Hamburger animation */
+
+.hamburger.active .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active .bar:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+
+.hamburger.active .bar:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+/* Nav menu (desktop) */
+
+.nav-menu {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.nav-menu ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-menu button {
+  margin-left: 20px;
+}
+
+body.no-scroll {
+  height: 100vh;
+  overflow: hidden;
+  position: fixed;
+  width: 100%;
+}
+
+
+/* Responsive styles */
+
+@media (max-width: 600px) {
+  .hamburger {
+    display: flex;
+    z-index: 999;
+  }
+
+  .nav-menu {
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: -150%;
+    flex-direction: column;
+    padding: 20px;
+    transition: all 0.3s ease;
+    z-index: 99;
+    overflow: hidden;
+  }
+
+  .nav-menu.active {
+    left: 0%;
+  }
+
+  .nav-menu ul {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .nav-menu ul li {
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+  }
+
+  .nav-menu button {
+    margin-top: 15px;
+    width: 100%;
+  }
+
+  .nav-menu {
+  background-color: #000;
+}
+}
+
 
 
 .book-now-btn {
@@ -401,11 +511,12 @@ object-position: center 300px;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    
     gap: 20px;
   }
   
   .customer-service .services{
-    /* height: 50vh; */
+    height: 45vh;
     width: 90%;
     display: flex;
     align-items: center;
@@ -617,18 +728,14 @@ object-position: center 300px;
     color: #EC2826;
   }
 
-  .card-section .cards-grid{
-    margin-top: 25px;
-    height: 100%;
-    width: 100%;
-    gap: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    padding: 10px;
-    /* background-color: green; */
-  }
+.card-section .cards-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 35px;
+  width: 100%;
+  padding: 10px;
+}
+
 
   .card-section .cards-grid .card{
     height: 230px;
@@ -700,8 +807,10 @@ object-position: center 300px;
     color: #8C0909;
   }
   .experience-work-short .short-div h3{
+    width: 100%;
     font-size: 1.5rem;
     color: #8C0909;
+    text-wrap: nowrap;
   }
 
   .booking-details-brief{
@@ -717,6 +826,17 @@ object-position: center 300px;
   .booking-details-brief .booking-contents{
     width: 60%;
     padding: 30px 60px;
+  }
+  .booking-details-brief .booking-contents button{
+   background-color: #D4B669;
+   margin: 20px 0;
+  padding: 4px 40px;
+  font-size: 1.5rem;
+  font-weight: 900;
+  color: #8C0909;
+  border-radius: 2px;
+  font-family: 'Playfair-Display-Italic';
+  border: none;
   }
 
   .booking-details-brief .booking-contents h2{
@@ -981,15 +1101,18 @@ footer .footer-container .middle-content-wrapper .contact-details p{
   }
 
   .about-content{
+    height: 90vh;
+    width: 100%;
     display: flex;
-    align-content: center;
+    align-items: center;
     justify-content: space-around;
-    /* background-color: green; */
     text-align: justify;
     padding: 50px 50px 0 50px;
+    border-bottom: 1px solid grey;
+    overflow: hidden;
   }
   .about .about-main .about-content .manzett-kaushal-profile-img{
-   height: 600px;
+   /* height: 600px; */
    width: 450px;
    
   }
@@ -997,12 +1120,12 @@ footer .footer-container .middle-content-wrapper .contact-details p{
    height: 100%;
    width: 100%;
    object-fit: cover;
-   object-position: center 200px;
+   object-position: center 400px;
 
   }
 
   .about-content h2{
-    font-size: 1.6rem;
+    font-size: 2rem;
     font-family: 'Playfair-Display';
     font-weight: 400;
     color: #8C0909;
@@ -1012,7 +1135,7 @@ footer .footer-container .middle-content-wrapper .contact-details p{
   /* mission-and-vision code starts here */
 
   .mission-and-vision{
-    height: 90vh;
+    margin: 30px 0;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -1091,7 +1214,7 @@ footer .footer-container .middle-content-wrapper .contact-details p{
   /* choose-manzett-koushal css starts here  */
 
   .choose-manzett-koushal{
-    height: 90vh;
+    margin: 30px 0;
     width: 100%;
     display: flex;
     align-items: flex-start;
