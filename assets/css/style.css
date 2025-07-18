@@ -286,6 +286,9 @@ body.no-scroll {
   /* bottom: 5vh; */
 }
 
+
+
+
 .hero .hero-content h1 {
   font-size: 4rem;
   margin: 0;
@@ -533,6 +536,7 @@ body.no-scroll {
   flex-direction: column;
 padding: 20px;
   gap: 20px;
+  opacity: 0;
 }
 
 .customer-service .services {
@@ -640,6 +644,7 @@ padding: 20px;
   background-color: #F2EEEB;
   padding: 0 30px;
   border-bottom: 0.5px solid #b4b3b3;
+  overflow: hidden;
 }
 
 .know-about-manzett .content {
@@ -758,6 +763,7 @@ padding: 20px;
   gap: 75px;
   width: 100%;
   padding: 10px;
+  scale: 0.7;
 }
 
 
@@ -824,6 +830,7 @@ padding: 20px;
   flex-direction: column;
   font-family: 'Playfair-Display';
   text-align: center;
+  opacity: 0.6;
 }
 
 .experience-work-short .short-div strong {
@@ -846,6 +853,7 @@ padding: 20px;
   justify-content: space-between;
   background-color: #F2EEEB;
   font-family: 'Playfair-Display';
+  overflow: hidden;
 }
 
 .booking-details-brief .booking-contents {
@@ -1103,14 +1111,15 @@ footer .footer-container .middle-content-wrapper .contact-details p {
 
 /* About Starts here  */
 .about{
-  height: 60vh;
+  height: 80vh;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: flex-start;
   background-image: url('../images/background/about-hero.jpg');
   background-position: center;
-  background-size: cover;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 .about .about-content{
   text-align: center;
@@ -1135,7 +1144,7 @@ footer .footer-container .middle-content-wrapper .contact-details p {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  padding: 20px;
+  padding: 0 20px;
   background-image: url('../images/background/stars.jpg');
   background-position: bottom;
   background-size: cover;
@@ -1154,6 +1163,7 @@ font-size: 2.5rem;
   flex-direction: column;
   padding: 30px;
   text-align: center;
+  opacity: 0.5;
 }
 
 .about-main-content .about-sub-contents-points h2, .wisdom-main-content .wisdom-sub-contents-points h2{
@@ -1186,6 +1196,7 @@ font-size: 1.5rem;
   background-image: url('../images/background/about-2.jpg');
   background-position: center;
   background-size: contain;
+  overflow: hidden;
 }
 
 .trust-manzett-koushal .trust-content-section{
@@ -1299,6 +1310,7 @@ line-height: 1rem;
   color: #F2EEEB;
   font-weight: 900;
   text-align: center;
+  scale: 0.8;
 }
 
 /* Appointment Starts Here  */
@@ -1636,6 +1648,7 @@ line-height: 1rem;
   background-color: #8C0909;
   padding: 30px 0;
   overflow: hidden;
+  overflow: hidden;
 }
 .services-content::before {
   content: "";
@@ -1646,7 +1659,7 @@ line-height: 1rem;
   background-size: cover;
   background-position: center;
   filter: grayscale(100%) brightness(0);
-  opacity: 0.3;
+  opacity: 0.5;
   z-index: 1;
 }
 
@@ -1703,6 +1716,7 @@ line-height: 1rem;
   display: flex;
   align-items: center;
   justify-content: space-around;
+  overflow: hidden;
 }
 
 .services-banner-image {
@@ -1782,6 +1796,7 @@ line-height: 1rem;
   color: #8C0909;
   font-weight: 900;
   letter-spacing: 25px;
+  opacity: 0;
 }
 
 .core-services-wrapper {
@@ -1801,6 +1816,7 @@ line-height: 1rem;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  scale: 0.6;
 }
 
 .core-service-card:nth-child(4n+1),
@@ -1833,6 +1849,7 @@ line-height: 1rem;
   margin-bottom: 50px;
 }
 
+/* Steps container */
 .steps {
   display: flex;
   justify-content: space-around;
@@ -1844,13 +1861,17 @@ line-height: 1rem;
   background-color: #F2EEEB;
 }
 
+/* Individual Step */
 .step {
   display: flex;
   flex-direction: column;
   align-items: center;
   max-width: 250px;
+  opacity: 0;
+  transform: translateY(50px);
 }
 
+/* Circle with Number */
 .number-circle {
   background-color: #a01717;
   color: #fff;
@@ -1860,18 +1881,19 @@ line-height: 1rem;
   display: flex;
   justify-content: center;
   font-size: 2.5rem;
-  font-family:serif;
+  font-family: serif;
   align-items: center;
   margin: 0;
   padding: 0;
 }
 
+/* Step Label */
 .step p {
   margin-top: 15px;
-  font-weight: bold;
   font-family: 'Playfair-Display-Italic';
   font-size: 35px;
   font-weight: bold;
+  text-align: center;
 }
 
 .step p span {
@@ -1879,12 +1901,17 @@ line-height: 1rem;
   font-style: normal;
 }
 
+/* Connecting Line */
 .line {
   flex-grow: 1;
   height: 2px;
   background-color: #a01717;
   max-width: 250px;
+  opacity: 0;
+  transform: scaleX(0);
+  transform-origin: left;
 }
+
 
 
 .contact{
@@ -1925,6 +1952,8 @@ justify-content: center;
   font-weight: 300;
   font-size: 1.5rem;
   margin: 15px 0;
+  scale: 0.4;
+  opacity: 0.3;
 }
 
 .session-booking{
@@ -1960,6 +1989,7 @@ justify-content: center;
   align-items: center;
   justify-content: center;
   padding: 0 20px;
+  overflow: hidden;
 }
 
 .map-location .map-content{

@@ -33,7 +33,6 @@ document.addEventListener("DOMContentLoaded", function () {
         pin: ".sticky-section .sticky-wrapper .sticky-left", // Full nested selector
         pinSpacing: false,         // Prevents extra spacing
         scroller: "[data-scroll-container]", // Your scroll container
-        markers: true              // For debugging
       });
   
     // Sync on refresh and resize
