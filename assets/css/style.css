@@ -453,6 +453,7 @@ body.no-scroll {
   border: none;
   border-radius: 5px;
   font-size: 1.2rem;
+  cursor: pointer;
 }
 
 .swiper-button-prev,
@@ -755,7 +756,7 @@ padding: 20px;
 
 
 .card-section .cards-grid .card {
-  height: 250px;
+  height: 270px;
   min-width: 270px;
   /* background-color: red; */
   /* border: 2px solid black; */
@@ -856,6 +857,7 @@ padding: 20px;
   border-radius: 2px;
   font-family: 'Playfair-Display-Italic';
   border: none;
+  cursor: pointer;
 }
 
 .booking-details-brief .booking-contents h2 {
@@ -1093,307 +1095,235 @@ footer .footer-container .middle-content-wrapper .contact-details p {
   font-weight: bold;
 }
 
-
-/* about section css starts here  */
-
-.about {
-  height: auto;
-  overflow: hidden;
-}
-
-.about .about-main {
+/* About Starts here  */
+.about{
+  height: 60vh;
+  width: 100%;
   display: flex;
   align-items: center;
-  justify-content: space-around;
-  flex-direction: column;
-  padding: 10px;
+  justify-content: flex-start;
+  background-image: url('../images/background/about-hero.jpg');
+  background-position: center;
+  background-size: cover;
+}
+.about .about-content{
   text-align: center;
-  /* background-color: red; */
+  padding: 20px 100px;
+  color: #F2EEEB;
 }
-
-.about .about-main h1 {
-  font-size: 3.5rem;
-  color: #EC2826;
-  font-family: 'Playfair-Display-Italic';
-  line-height: 3rem;
-  font-weight: 900;
-  margin: 0 20px;
-}
-
-.about .about-main h1 strong {
-  font-size: 2.2rem;
-  color: #0C0C0C;
-  font-weight: bolder;
+.about .about-content p{
+  font-size: 2.5rem;
   font-family: 'Playfair-Display';
 }
-
-.about-content {
-  height: 90vh;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  text-align: justify;
-  padding: 50px 50px 0 50px;
-  border-bottom: 1px solid grey;
-  overflow: hidden;
+.about .about-content h1{
+  font-size: 5rem;
+  font-family: 'Playfair-Display-Italic';
 }
-
-.about .about-main .about-content .manzett-kaushal-profile-img {
-  /* height: 600px; */
-  width: 450px;
-
-}
-
-.about .about-main .about-content .manzett-kaushal-profile-img img {
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-  object-position: center 400px;
-
-}
-
-.about-content h2 {
+.about .about-content h2{
   font-size: 2rem;
   font-family: 'Playfair-Display';
-  font-weight: 400;
-  color: #8C0909;
-  letter-spacing: 0.5px;
 }
 
-/* mission-and-vision code starts here */
-
-.mission-and-vision {
-  margin: 30px 0;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-}
-
-.mission-and-vision-bg {
-  height: 300px;
-  width: 550px;
-  background: #8C0909;
-  padding: 10px;
+.about-main-content, .wisdom-main-content{
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  border-radius: 25px;
+  padding: 20px;
 }
-
-.content-images {
-  height: 100%;
-  border-radius: 25px;
-  border: 2px solid #D4B669;
-  overflow: hidden;
-  padding: 25px 20px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-}
-
-.content-images .details {
-  width: 80%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.mission-and-vision .mission-and-vision-bg .content-images .details p {
-  font-size: 1.2rem;
-  font-weight: 300;
-  line-height: 1.6rem;
+.about-main-content .about-main-header h2, .wisdom-main-content .wisdom-main-header h2{
+font-size: 2.5rem;
   font-family: 'Playfair-Display';
-  text-align: justify;
-  letter-spacing: 1px;
-  color: #F2EEEB;
+  color: #EC2826;
+  font-weight: 900;
+  border-bottom: 2px solid #EC2826;
 }
-
-.mission-and-vision-bg .img-and-header .image {
-  height: 70px;
-  width: 70px;
-}
-
-.mission-and-vision-bg .img-and-header .image img {
-  height: 100%;
-  width: 100%;
-  object-fit: contain;
-  object-position: center;
-}
-
-.img-and-header {
-  display: flex;
+.about-main-content .about-sub-contents-points, .wisdom-main-content .wisdom-sub-contents-points {
+ display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  padding: 30px;
+  text-align: center;
 }
 
-.img-and-header h2 {
-  font-size: 2.8rem;
-  font-weight: 900;
-  font-family: 'Playfair-Display-Italic';
-  color: #F2EEEB;
-}
-
-.about-content h2 strong {
-  color: #EC2826;
-}
-
-/* choose-manzett-koushal css starts here  */
-
-.choose-manzett-koushal {
-  margin: 30px 0;
-  width: 100%;
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
-  flex-direction: column;
-  padding: 0 100px;
-
-}
-
-.choose-manzett-koushal h2 {
-  font-size: 4rem;
-  font-family: 'Playfair-Display-Italic';
-  font-weight: 900;
-  color: #EC2826;
-}
-
-.choose-manzett-koushal .features {
-  width: 100%;
-}
-
-.choose-manzett-koushal .features .features-list li {
-  font-size: 1.8rem;
-  font-family: "Playfair-Display";
-  font-weight: 500;
+.about-main-content .about-sub-contents-points h2, .wisdom-main-content .wisdom-sub-contents-points h2{
+font-size: 1.5rem;
+  font-family: 'Playfair-Display';
   color: #8C0909;
-  list-style: none;
-  margin: 0 20px;
-  letter-spacing: 1px;
+  font-weight: bolder;
+  margin: 10px 0;
+}
+.about-main-content .about-sub-contents-points p strong, .wisdom-main-content .wisdom-sub-contents-points p strong{
+font-size: 1.5rem;
+  font-family: 'Playfair-Display';
+  color: #8C0909;
+  font-weight: bolder;
+  margin: 10px 0;
+}
+.about-main-content .about-sub-contents-points p, .wisdom-main-content .wisdom-sub-contents-points p{
+font-size: 1.5rem;
+  font-family: 'Playfair-Display-Italic';
+  color: #8C0909;
+  margin: 10px 0;
 }
 
-.awards-and-recognition {
+.trust-manzett-koushal{
   height: 100vh;
   width: 100%;
   display: flex;
   align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  /* background-color: #007bff; */
-  /* padding: 20px; */
-  box-sizing: border-box;
+  justify-content: flex-end;
+  background-image: url('../images/background/about-2.jpg');
+  background-position: center;
+  background-size: contain;
 }
 
-.awards-and-recognition .swiper-button-prev,
-.swiper-button-next {
-  color: white !important;
+.trust-manzett-koushal .trust-content-section{
+  width: 50%;
+  padding: 0 10px;
 }
 
-.awards-and-recognition .swiper-button-next:after,
-.swiper-button-prev:after {
-  font-size: 20px !important;
-  font-weight: bolder !important;
+.trust-manzett-koushal .trust-content-section .trust-manzett-koushal-content{
+  margin: 40px 0;
 }
 
-.awards-and-recognition .myAwardsSwiper .swiper-slide {
-  display: flex !important;
+.trust-manzett-koushal .trust-content-section .trust-manzett-koushal-content h2{
+  font-size: 2.5rem;
+  font-family: 'Playfair-Display';
+  color: #EC2826;
+  margin: 10px 0;
+  line-height: 3rem;
+}
+.trust-manzett-koushal .trust-content-section .trust-manzett-koushal-content p{
+  font-size: 1.2rem;
+  font-family: 'Playfair-Display';
+  color: #8C0909;
+  font-weight: bolder;
 }
 
-
-
-.swiper {
+.struggling-in-life-section{
+  height: 100vh;
   width: 100%;
-
-}
-
-.awards-img-content {
   display: flex;
   align-items: center;
-  justify-content: center;
-  background-color: #8C0909;
-  padding: 25px;
-  gap: 30px;
+  justify-content: flex-start;
+  background-image: url('../images/background/about-3.jpg');
+  background-position: center;
+  background-size: contain;
+  background-color: rebeccapurple;
+  padding: 30px;
 }
 
-.awards-img-content .awards-image {
-  height: 350px;
-  width: 450px;
-  border-radius: 25px;
-  background-color: #D4B669;
+.struggling-in-life-section .struggling-content{
+  padding: 0 20px;
+  width: 60%;
+}
+
+.struggling-in-life-section .struggling-content h2{
+  font-size: 2.5rem;
+  font-family: 'Playfair-Display';
+  color: #EC2826;
+  margin: 5px 0;
+  line-height: 3rem;
+  font-weight: bolder;
+}
+
+
+.struggling-in-life-section .struggling-content .struggling-sub-contents{
+  margin: 10px 0;
+}
+.struggling-in-life-section .struggling-content .struggling-sub-contents strong{
+  font-size: 1rem;
+  font-family: 'Playfair-Display';
+  color: #8C0909;
+  font-weight: bolder;
+  margin: 0;
+  padding: 0;
+}
+.struggling-in-life-section .struggling-content .struggling-sub-contents p{
+  font-size: 0.9rem;
+  font-family: 'Playfair-Display';
+  color: #8C0909;
+  font-weight: 400;
+line-height: 1rem;
+}
+
+.about-conlusion-section {
+  height: 40vh;
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 20px;
+  margin: 50px 0;
+  background-color: #F2EEEB;
+  overflow: hidden;
+}
+.conslusion-content {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 20px;
+  padding: 40px 0;
+  background-color: #8C0909;
   overflow: hidden;
 }
 
-.awards-img-content .awards-image img {
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-  object-position: center;
+.conslusion-content::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url("../images/background/cancer-bg-overlay2.svg");
+  background-size: cover;
+  background-position: center;
+  filter: grayscale(100%) brightness(0);
+  opacity: 0.3;
+  z-index: 1;
 }
 
-.awards-content {
-  color: #fff;
-  max-width: 600px;
-  padding: 0 15px;
-}
-
-.awards-content h3 {
-  font-size: 2rem;
+.about-conlusion-section .conslusion-content h2{
+   font-size: 2.5rem;
   font-family: 'Playfair-Display-Italic';
-  margin-bottom: 10px;
-  letter-spacing: 1px;
+  color: #F2EEEB;
+  font-weight: 900;
+  text-align: center;
 }
 
-.awards-content p {
-  font-size: 1rem;
-  line-height: 1.5;
-  font-family: 'Playfair-Display';
-}
-
-.manzett-koushal-words {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.words-content {
-  width: 80%;
-  font-family: 'Playfair-Display';
-  background-color: #fedcb0;
-  padding: 40px;
-  border-radius: 15px;
-}
-
-.words-content p {
-  font-size: 2rem;
-  font-weight: 500;
-}
-
-.words-content strong {
-  font-size: 2rem;
-  font-weight: 500;
-  color: #8C0909;
-  font-family: 'Playfair-Display-Italic';
-}
-
-.sun-image {
-  height: 300px;
-  background-color: #000;
-}
+/* Appointment Starts Here  */
 
 .appointment {
   height: 80vh;
+  position: relative;
   width: 100%;
-  background-image: url('../images/background/small-icons-cream-bg.jfif');
-  background-position: center;
-  background-position: center;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
+  gap: 20px;
+  padding: 40px 0;
+  overflow: hidden;
 }
+
+.appointment::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url("../images/background/small-icons-cream-bg.png");
+  background-size: cover;
+  background-position: center;
+  opacity: 0.4;
+  z-index: 1;
+}
+
+/* Children inside .appointment should go above the ::before layer */
+.appointment > * {
+  position: relative;
+  z-index: 2;
+}
+
 
 .appointment-main {
   display: flex;
@@ -1513,7 +1443,7 @@ footer .footer-container .middle-content-wrapper .contact-details p {
 .choose-a-call {
   height: 100vh;
   width: 100%;
-  background-image: url('../images/background/bulb.png');
+  background-image: url('../images/background/bulb-corner.png');
   background-position: center;
   background-size: cover;
   padding: 10px 150px;
@@ -1565,6 +1495,7 @@ footer .footer-container .middle-content-wrapper .contact-details p {
   border-radius: 5px;
   font-family: 'Playfair-Display-Italic';
   border: none;
+  cursor: pointer;
 }
 
 .consultaion-pricing {
@@ -1581,6 +1512,7 @@ footer .footer-container .middle-content-wrapper .contact-details p {
   font-size: 2rem;
   font-family: 'Playfair-Display';
   font-weight: 900;
+  color: #F2EEEB;
 }
 
 .consultaion-pricing .price-catalogue {
@@ -1613,7 +1545,7 @@ footer .footer-container .middle-content-wrapper .contact-details p {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  background-color: #8C0909;
+  padding: 60px 0;
 }
 
 .sessions-conclusion h2 {
@@ -1638,7 +1570,7 @@ footer .footer-container .middle-content-wrapper .contact-details p {
 }
 
 .sessions-conclusion strong {
-  color: #fedcb0;
+  color: #EC2826;
   font-family: 'Playfair-Display-Italic';
   font-weight: 900;
   font-size: 2rem;
@@ -1682,27 +1614,45 @@ footer .footer-container .middle-content-wrapper .contact-details p {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #8C0909;
 }
 
+
+
 .services-content {
+  position: relative;
+  width: 100%;
   display: flex;
-  align-items: flex-end;
+  align-items: center;
   justify-content: center;
   flex-direction: column;
+  background-color: #8C0909;
+  padding: 30px 0;
+  overflow: hidden;
+}
+.services-content::before {
+  content: "";
+  height: 100%;
+  position: absolute;
+  inset: 0;
+  background-image: url("../images/background/cancer-bg-overlay2.svg");
+  background-size: cover;
+  background-position: center;
+  filter: grayscale(100%) brightness(0);
+  opacity: 0.3;
+  z-index: 1;
 }
 
 .services-content h1 {
-  font-size: 3.5rem;
+  font-size:4rem;
   font-family: 'Playfair-Display-Italic';
   font-weight: 900;
   color: #D4B669;
   line-height: 4rem;
 }
 
-.services-content h1 strong {
+.services-content h1 span {
   font-family: 'Playfair-Display';
-  font-weight: 600;
+  font-weight: 300;
   color: #F2EEEB;
 }
 
@@ -1714,7 +1664,12 @@ footer .footer-container .middle-content-wrapper .contact-details p {
   line-height: 7rem;
 }
 
-.services-content button {
+.services-content .services-book-now-btn{
+  width: 50%;
+  text-align: end;
+}
+
+.services-book-now-btn button {
   background-color: #D4B669;
   padding: 4px 40px;
   font-size: 1.5rem;
@@ -1723,10 +1678,19 @@ footer .footer-container .middle-content-wrapper .contact-details p {
   border-radius: 2px;
   font-family: 'Playfair-Display-Italic';
   border: none;
+  cursor: pointer;
+  position: relative;
+  z-index: 10;
 }
 
+.services-book-now-btn button:hover {
+  background-color: #F2EEEB;
+  color: #8C0909;
+}
+
+
 .services-offered {
-  height: 100vh;
+  height: 90vh;
   width: 100%;
   display: flex;
   align-items: center;
@@ -1777,11 +1741,14 @@ footer .footer-container .middle-content-wrapper .contact-details p {
 
 .services-banner-content button {
   background-color: #8C0909;
-  padding: 5px 10px;
+  padding: 10px 40px;
   color: #FFF6F1;
-  font-family: 'Playfair-Display-Italic';
+  font-family: 'Playfair-Display';
   border: none;
+  font-size: 1.5rem;
+  font-weight: 600;
   border-radius: 5px;
+  cursor: pointer;
 }
 
 
@@ -1791,6 +1758,7 @@ footer .footer-container .middle-content-wrapper .contact-details p {
   align-items: center;
   justify-content: baseline;
   flex-direction: column;
+  background-color: #F2EEEB;
 }
 
 .core-services h2 {
@@ -1818,9 +1786,13 @@ footer .footer-container .middle-content-wrapper .contact-details p {
 }
 
 .core-services-wrapper .core-service-card {
-  height: 600px;
-  width: 500px;
+  height: 500px;
+  width: 400px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-image: url('../images/background/7956279.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .core-service-card:nth-child(4n+1),
@@ -1857,10 +1829,11 @@ footer .footer-container .middle-content-wrapper .contact-details p {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  width: 90%;
+  width: 100%;
   gap: 30px;
   flex-wrap: wrap;
-  padding: 0 20px;
+  padding: 20px;
+  background-color: #F2EEEB;
 }
 
 .step {
@@ -1878,18 +1851,18 @@ footer .footer-container .middle-content-wrapper .contact-details p {
   border-radius: 50%;
   display: flex;
   justify-content: center;
+  font-size: 2.5rem;
+  font-family:serif;
   align-items: center;
-  font-size: 3rem;
-  font-family: 'Playfair-Display-Italic';
-  font-weight: bold;
+  margin: 0;
+  padding: 0;
 }
 
 .step p {
   margin-top: 15px;
   font-weight: bold;
   font-family: 'Playfair-Display-Italic';
-  font-size: 1.8rem;
-  line-height: 1.4;
+  font-size: 35px;
   font-weight: bold;
 }
 

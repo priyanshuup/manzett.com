@@ -36,7 +36,7 @@ const heroSwiper = new Swiper('.heroswipe.swiper', {
 });
 
 
-  const mySwiper = new Swiper(".myAwardsSwiper", {
+  const mySwiper = new Swiper("", {
     slidesPerView: 1,
     spaceBetween: 30,
     loop: true,
