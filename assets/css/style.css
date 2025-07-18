@@ -1136,6 +1136,9 @@ footer .footer-container .middle-content-wrapper .contact-details p {
   justify-content: center;
   flex-direction: column;
   padding: 20px;
+  background-image: url('../images/background/stars.jpg');
+  background-position: bottom;
+  background-size: cover;
 }
 .about-main-content .about-main-header h2, .wisdom-main-content .wisdom-main-header h2{
 font-size: 2.5rem;
@@ -1247,7 +1250,7 @@ font-size: 1.5rem;
   padding: 0;
 }
 .struggling-in-life-section .struggling-content .struggling-sub-contents p{
-  font-size: 0.9rem;
+  font-size: 1rem;
   font-family: 'Playfair-Display';
   color: #8C0909;
   font-weight: 400;
