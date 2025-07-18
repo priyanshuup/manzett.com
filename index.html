@@ -201,7 +201,7 @@
                     intuitive insight—tailored uniquely to your birth chart, name, and timing.
                 </p>
                 <h3>Let astrology become a conscious part of your growth—not just once, but every day.</h3>
-                      <button>Book Now</button>
+                <button>Book Now</button>
             </div>
             <div class="manzett-image-div">
                 <div class="image-bg">
@@ -249,40 +249,9 @@
             <div id="footer-placeholder"></div>
         </footer>
     </main>
-    <script>
-        fetch("components/header.html")
-            .then(res => res.text())
-            .then(data => {
-                document.getElementById("header-placeholder").innerHTML = data;
-                initializeHamburger();
-            });
-
-        fetch("components/footer.html")
-            .then(res => res.text())
-            .then(data => {
-                document.getElementById("footer-placeholder").innerHTML = data;
-            });
-
-        function initializeHamburger() {
-            const hamburger = document.getElementById("hamburger");
-            const navMenu = document.getElementById("navMenu");
-
-            if (!hamburger || !navMenu) {
-                console.error("Hamburger elements missing!");
-                return;
-            }
-
-            hamburger.addEventListener("click", () => {
-                const isActive = hamburger.classList.contains("active");
-                hamburger.classList.toggle("active", !isActive);
-                navMenu.classList.toggle("active", !isActive);
-                document.body.classList.toggle("no-scroll", !isActive);
-            });
-        }
-    </script>
-
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./assets/js/swiper.js"></script>
+    <script src="./assets/js/script.js"></script>
 </body>
 
 </html>
