@@ -1402,6 +1402,7 @@ line-height: 1rem;
   align-items: center;
   justify-content: center;
   gap: 50px;
+  overflow: hidden;
 }
 
 .session-content {
@@ -1467,6 +1468,7 @@ line-height: 1rem;
   background-position: center;
   background-size: cover;
   padding: 10px 150px;
+  overflow: hidden;
 }
 
 .choose-a-call h2 {
@@ -1566,6 +1568,7 @@ line-height: 1rem;
   justify-content: center;
   flex-direction: column;
   padding: 60px 0;
+  overflow: hidden;
 }
 
 .sessions-conclusion h2 {
