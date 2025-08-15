@@ -732,25 +732,15 @@ padding: 20px;
 
 }
 
-.card-section {
-  /* height: 100vh; */
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  background-color: #FFF6F1;
-  padding: 50px;
-}
 
-.card-section h1 {
+.card-section h1, .card-section-guidance h1 {
   font-size: 3rem;
   font-family: "Playfair-Display";
   color: #8C0909;
   font-weight: 800;
 }
 
-.card-section strong {
+.card-section strong, .card-section-guidance strong {
   font-size: 3.5rem;
   font-weight: bolder;
   font-family: "Playfair-Display-Italic";
@@ -766,7 +756,39 @@ padding: 20px;
   scale: 0.7;
 }
 
+.card-section-guidance{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
 
+.cards-grid-guidance {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 95px;
+  width: 100%;
+  padding: 10px;
+  scale: 0.7;
+}
+
+.card-section-guidance .cards-grid-guidance .card {
+  min-height: 350px;
+  min-width: 350px;
+  /* max-width: 270px; */
+  /* background-color: red; */
+  /* border: 2px solid black; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffeec4;
+  background-image: url('../images/background/7956279.png');
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  text-align: center;
+}
 .card-section .cards-grid .card {
   height: 270px;
   min-width: 270px;
@@ -784,9 +806,12 @@ padding: 20px;
   text-align: center;
 }
 
-.card-section .cards-grid .card h2 {
+.card-section .cards-grid .card h2, .card-section-guidance .cards-grid-guidance .card h2 {
   font-size: 1.8rem;
   color: #8C0909;
+}
+.card-section h1{
+  text-align: center;
 }
 
 .experience-work-short {
@@ -996,6 +1021,7 @@ footer h2 {
   font-weight: bolder;
   border-radius: 5px;
   border: 2px solid #8C0909;
+  cursor: pointer;
   z-index: 99;
 }
 
@@ -1820,11 +1846,20 @@ line-height: 1rem;
   background-size: cover;
   background-repeat: no-repeat;
   scale: 0.6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.core-service-card h1{
+  font-size: 2rem;
+  font-style: 'Playfair-Display';
 }
 
 .core-service-card:nth-child(4n+1),
 .core-service-card:nth-child(4n) {
   background-color: #8C0909;
+  color: #F2EEEB;
   /* Color A for 1st and 4th */
 }
 

@@ -72,6 +72,21 @@ function animateHome() {
     duration: 1,
     ease: "power2.out"
   });
+gsap.from(".card-section-guidance .cards-grid-guidance .card", {
+  scrollTrigger: {
+    trigger: ".card-section-guidance .cards-grid-guidance",
+    start: "top 80%", // when section enters the viewport
+    toggleActions: "play reverse play reverse", 
+    // markers: true // uncomment to debug
+  },
+  scale: 0.8,        // start smaller
+  opacity: 0,        // start invisible
+  duration: 0.6,     // each animation duration
+  ease: "back.out(1.9)", // a nice pop effect
+  stagger: 0.2       // delay between each card
+});
+
+
   gsap.to(".card-section .cards-grid", {
     scrollTrigger: {
       trigger: ".card-section .cards-grid", // ✅ use class since your section has class
