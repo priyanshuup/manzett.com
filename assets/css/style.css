@@ -1626,15 +1626,12 @@ line-height: 1rem;
 
 
 .services {
-  height: 80vh;
+  min-height: 60vh;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-
-
-
 .services-content {
   position: relative;
   width: 100%;
@@ -1644,7 +1641,6 @@ line-height: 1rem;
   flex-direction: column;
   background-color: #8C0909;
   padding: 30px 0;
-  overflow: hidden;
   overflow: hidden;
 }
 .services-content::before {
@@ -1708,7 +1704,7 @@ line-height: 1rem;
 
 
 .services-offered {
-  height: 90vh;
+  min-height: 70vh;
   width: 100%;
   display: flex;
   align-items: center;
@@ -1921,7 +1917,7 @@ line-height: 1rem;
 
 
 .contact{
-height: 80vh;
+min-height: 40vh;
 width: 100%;
 display: flex;
 align-items: center;
@@ -2041,7 +2037,7 @@ justify-content: center;
 }
 
 .faq-review-section {
-  height: 80vh;
+  min-height: 60vh;
   width: 100%;
   display: flex;
   flex-wrap: wrap;

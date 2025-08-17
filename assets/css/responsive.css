@@ -32,7 +32,6 @@
   .nav-menu ul {
     flex-direction: column;
     width: 100%;
-    /* background-color: red; */
   }
 
   .nav-menu ul li {
@@ -64,21 +63,14 @@
     /* width: 100%; */
     padding: 0 10px;
     text-wrap: noWrap;
-    /* background-color: red; */
     /* bottom: 5vh; */
   }
 
   .heroswipe .hero,
   .heroswipe .hero-second {
-    /* flex-direction:column-reverse;
-  background-color: red; */
     height: 60vh;
     background-image: none;
     padding: 0 10px;
-  }
-
-  .heroswipe .hero .hero-content {
-    /* background-color: green; */
   }
 
   .heroswipe .hero .hero-content h1 {
@@ -103,7 +95,6 @@
 
   .heroswipe .hero-second-content {
     width: 100%;
-    /* background-color: red; */
     text-wrap: wrap;
   }
 
@@ -266,7 +257,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    /* background-color: red; */
     background-image: url('../images/background/suneffect.svg');
     /* background-position:right 20px; */
     background-size: cover;
@@ -527,6 +517,247 @@ flex-direction: column;
   font-weight: 900;
   font-size: 1.5rem;
 }
+
+.services-content {
+  padding: 20px;
+  text-align: center;
+}
+
+.services-content h1 {
+  font-size:2rem;
+  font-family: 'Playfair-Display-Italic';
+  font-weight: 900;
+  color: #D4B669;
+  line-height: 3rem;
+}
+
+.services-content h1 span {
+  font-family: 'Playfair-Display';
+  font-weight: 300;
+  color: #F2EEEB;
+}
+
+.services-content h2 {
+  font-size: 3rem;
+  font-family: 'Playfair-Display-Italic';
+  font-weight: 600;
+  color: #D4B669;
+  line-height: 4rem;
+  text-wrap: nowrap;
+}
+
+.services-content .services-book-now-btn{
+  margin: 20px 0;
+  width: 100%;
+  text-align: center;
+}
+
+.services-book-now-btn button {
+  font-size: 1.2rem;
+}
+.services-offered {
+  justify-content: center;
+  flex-direction: column;
+}
+.services-banner-image {
+  height: 250px;
+  width: 350px;
+}
+
+.services-banner-content {
+  width: 100%;
+  align-items: center;
+  padding: 20px;
+}
+
+.services-banner-content h2 {
+  font-size: 2rem;
+  line-height: 3rem;
+  font-weight: 800;
+  font-family: 'Playfair-Display';
+}
+
+.services-banner-content h2 strong {
+  font-size: 2rem;
+  line-height: 3rem;
+  font-weight: 900;
+  font-family: 'Playfair-Display-Italic';
+}
+
+.services-banner-content p {
+  text-align: center;
+}
+
+.services-banner-content button {
+  font-size: 1.2rem;
+}
+
+
+.core-services {
+  justify-content: center;
+}
+
+.core-services h2 {
+  font-size: 1.5rem;
+}
+
+.core-services h3 {
+  font-size: 2.5rem;
+  text-align: center;
+  letter-spacing: 15px;
+}
+
+.core-services-wrapper {
+  display: grid;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  gap: 20px;
+  padding: 20px 0;
+  justify-content: center;
+}
+
+
+.core-services-wrapper .core-service-card {
+  height: 300px;
+  width: 300px;
+}
+
+.core-service-card h1{
+  font-size: 1.5rem;
+  font-style: 'Playfair-Display';
+}
+
+
+
+.how-it-works {
+  padding: 20px;
+  margin-bottom: 80px;
+}
+
+.how-it-works h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+
+/* Steps container */
+.steps {
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+
+
+/* Circle with Number */
+.number-circle {
+  width: 45px;
+  height: 45px;
+  font-size: 1.5rem;
+}
+
+/* Step Label */
+.step p {
+  font-size: 25px;
+  text-wrap: nowrap
+}
+
+.contact-hero{
+  width: 100%;
+  height: 90%;
+  align-items: center;
+  background-image: none;
+  background-color: #8C0909;
+}
+
+.contact-hero-content{
+  padding: 0 20px;
+}
+
+.contact-hero-content h1{
+  font-weight: bolder;
+  font-size: 2rem;
+  line-height: 3rem;
+}
+
+.contact-hero-content h2{
+  font-size: 1.2rem;
+}
+
+.session-booking{
+  width: 100%;
+  text-align: center;
+}
+
+.contact-schedule-button{
+  font-size: 1.2rem;
+}
+
+.map-location{
+  min-height: 60vh;
+  flex-direction: column;
+}
+
+.map-location .map-content{
+  width: 100%;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.map-location .map-content h2{
+   font-size: 2.5rem;
+  margin: 10px;
+}
+
+.map-location .map-content .map-content-list{
+  width: 100%;
+  text-align: start;
+  padding: 0 20px;
+}
+
+.map-location .map-content .map-content-list li{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  list-style: none;
+  font-size: 1.2rem;
+}
+.map-location .map-content .map-content-list li img{
+  height: 30px;
+  width: 30px;
+}
+
+.map-location .map iframe{
+  border-radius: 25px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.faq-review-section {
+  flex-wrap: nowrap;
+  justify-content: center;
+  padding: 50px 100px;
+  margin-bottom: 80px;
+}
+
+.faq,
+.review {
+  flex: 1 1 45%;
+}
+
+.faq h2,
+.review h2 {
+  font-size: 1.5rem;
+}
+
+/* FAQ styles */
+.faq-item {
+  margin-bottom: 15px;
+}
+
+.arrow {
+  font-size: 1.2rem;
+  transform: rotate(0deg);
+  transition: transform 0.3s;
+}
+
 
   footer h2 {
     font-size: 1.4rem;
