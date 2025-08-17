@@ -175,49 +175,7 @@ body.no-scroll {
 
 /* Responsive styles */
 
-@media (max-width: 600px) {
-  .hamburger {
-    display: flex;
-    z-index: 999;
-  }
 
-  .nav-menu {
-    height: 100vh;
-    width: 100%;
-    position: absolute;
-    top: 50%;
-    left: -150%;
-    flex-direction: column;
-    padding: 20px;
-    transition: all 0.3s ease;
-    z-index: 99;
-    overflow: hidden;
-  }
-
-  .nav-menu.active {
-    left: 0%;
-  }
-
-  .nav-menu ul {
-    flex-direction: column;
-    width: 100%;
-  }
-
-  .nav-menu ul li {
-    width: 100%;
-    text-align: center;
-    padding: 10px 0;
-  }
-
-  .nav-menu button {
-    margin-top: 15px;
-    width: 100%;
-  }
-
-  .nav-menu {
-    background-color: #000;
-  }
-}
 
 
 
@@ -738,6 +696,7 @@ padding: 20px;
   font-family: "Playfair-Display";
   color: #8C0909;
   font-weight: 800;
+  text-wrap: wrap;
 }
 
 .card-section strong, .card-section-guidance strong {
@@ -765,16 +724,16 @@ padding: 20px;
 
 .cards-grid-guidance {
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: 95px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 40px; /* reduce gap a bit */
   width: 100%;
-  padding: 10px;
-  scale: 0.7;
+  padding: 10px 15px;
 }
 
+
 .card-section-guidance .cards-grid-guidance .card {
-  min-height: 350px;
-  min-width: 350px;
+  min-height: 270px;
+  min-width: 270px;
   /* max-width: 270px; */
   /* background-color: red; */
   /* border: 2px solid black; */
@@ -871,7 +830,7 @@ padding: 20px;
 }
 
 .booking-details-brief {
-  height: 100vh;
+  min-height: 100vh;
   width: 100%;
   display: flex;
   align-items: center;
@@ -1652,7 +1611,7 @@ line-height: 1rem;
 .swiper.conclusionSwiper .swiper-slide img {
   height: 100%;
   width: 100%;
-  object-fit: cover;
+  object-fit: contain;
   object-position: center;
 }
 
@@ -2163,27 +2122,3 @@ justify-content: center;
 }
 
 
-
-@media screen and (max-width: 1200px) {
-  .hero-content {
-    position: relative;
-  }
-
-  .hero .hero-content h1 {
-    font-size: 3.5rem;
-    margin: 0;
-    padding: 0 10px;
-    text-wrap: nowrap;
-    line-height: 4rem;
-    font-family: 'Playfair-Display-Italic';
-  }
-
-  .hero .hero-content h2 {
-    font-size: 2.5rem;
-  }
-
-  .customer-service .icon-and-text .icon {
-    height: 80px;
-    width: 60px;
-  }
-}

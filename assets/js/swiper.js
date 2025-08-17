@@ -1,5 +1,5 @@
 const swiper = new Swiper('.testimonial-main', {
-  slidesPerView: 4,
+  slidesPerView: 4, // default (desktop)
   spaceBetween: 30,
   loop: true,
   loopedSlides: 5, // should equal your number of slides
@@ -13,6 +13,20 @@ const swiper = new Swiper('.testimonial-main', {
     clickable: true,
     dynamicBullets: true,
   },
+  breakpoints: {
+    // when window width is <= 767px (mobile)
+    0: {
+      slidesPerView: 1,
+    },
+    // when window width is between 768px - 1023px (tablet)
+    768: {
+      slidesPerView: 3,
+    },
+    // when window width is >= 1024px (desktop)
+    1024: {
+      slidesPerView: 4,
+    }
+  }
 });
 
 

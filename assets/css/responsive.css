@@ -1,0 +1,527 @@
+@media (max-width: 770px) {
+  header {
+  width: 100%;
+  padding: 10px 15px;
+}
+  .hamburger {
+    display: flex;
+    z-index: 999;
+  }
+
+  .nav-menu {
+    height: 90vh;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: -150%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 20px;
+    transition: all 0.3s ease;
+    z-index: 99;
+    overflow: hidden;
+  }
+
+  .nav-menu.active {
+    left: 0%;
+  }
+
+  .nav-menu ul {
+    flex-direction: column;
+    width: 100%;
+    /* background-color: red; */
+  }
+
+  .nav-menu ul li {
+    font-size: 1px;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    margin: 5px 0;
+  }
+
+  .nav-menu ul li a{
+    font-size: 1.5rem;
+  }
+
+  .nav-menu button {
+    /* margin-top: 15px; */
+    width: 100%;
+  }
+
+  .nav-menu {
+    background-color: #F2EEEB;
+  }
+
+
+  /* hero page */
+
+  .heroswipe .hero .hero-content,
+.heroswipe .hero-second {
+  /* width: 100%; */
+  padding: 0 10px;
+  text-wrap: noWrap;
+  /* background-color: red; */
+  /* bottom: 5vh; */
+}
+
+ .heroswipe .hero,
+.heroswipe .hero-second{
+  /* flex-direction:column-reverse;
+  background-color: red; */
+  height: 60vh;
+  background-image: none;
+  padding: 0 10px;
+}
+
+.heroswipe .hero .hero-content{
+  /* background-color: green; */
+}
+
+.heroswipe .hero .hero-content h1{
+  font-size: 2.5rem;
+  margin: 0;
+  padding: 0 5px;
+  text-wrap: nowrap;
+  color: #EC2826;
+  line-height: 3rem;
+  font-family: 'Playfair-Display-Italic';
+}
+
+.heroswipe .swiper-slide .hero-second h2{
+  font-size: 1.8rem;
+  padding: 0 12px;
+}
+.heroswipe .swiper-slide .hero-second p, .heroswipe .swiper-slide .hero-second p strong{
+  font-size: 1rem;
+}
+
+.heroswipe .hero-second-content{
+  width: 100%;
+  /* background-color: red; */
+  text-wrap: wrap;
+}
+
+
+
+.heroswipe .hero .hero-content h2 {
+  font-size: 1.5rem;
+  margin-top: 25px;
+  color: #8C0909;
+  line-height: 2.5rem;
+  font-weight: 300;
+  font-family: 'Playfair-Display';
+}
+
+.heroswipe .hero-second .booking-buttons button {
+  font-size: 0.8rem;
+}
+
+.customer-service .services {
+  width: 100%;
+ flex-wrap: wrap;
+}
+
+
+.customer-service .services .icon-and-text .icon{
+  /* height: 80; */
+  width: 80px;
+}
+
+.customer-service .experence-expertise {
+  flex-wrap: wrap;
+}
+
+.customer-service .experence-expertise .short-div {
+  width: 160px;
+  padding: 10px;
+  font-family: 'Playfair-Display';
+  background-color: #D4B669;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.customer-service .experence-expertise .short-div h3 ,
+.customer-service .experence-expertise .short-div strong{
+  font-size: 1rem;
+}
+
+.know-about-manzett {
+  flex-direction: column;
+}
+
+.know-about-manzett .content {
+  padding: 0 5px;
+  width: 100%;
+}
+
+.know-about-manzett .content h1{
+  font-size: 2.5rem;
+  line-height: 3.5rem;
+  font-family: 'Playfair-Display';
+  color: #8C0909;
+}
+
+.card-section-guidance h1{
+  font-size: 2.5rem;
+  line-height: 3.5rem;
+  font-family: 'Playfair-Display';
+  color: #8C0909;
+  text-align: center;
+}
+
+.card-section-guidance .cards-grid-guidance{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.card-section-guidance .cards-grid-guidance .card {
+  max-height: 270px;
+  max-width: 270px;
+
+}
+.know-about-manzett .content h1 strong, .card-section-guidance h1 strong{
+  font-size: 2.5rem;
+  line-height: 3.5rem;
+}
+
+.card-section-guidance h1, .card-section-guidance strong{
+  font-size: 2.5rem;
+}
+
+.know-about-manzett .backgroundImage {
+  width: 500px;
+}
+
+.know-about-manzett .backgroundImage .background img {
+  min-width: 100%;
+  height: 100%;
+  max-height: 800px;
+  object-fit: cover;
+  object-position: center 300px;
+
+}
+
+.experience-work-short{
+  flex-wrap: wrap;
+}
+
+.experience-work-short .short-div {
+  height: 180px;
+  width: 280px;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #ffeec4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-family: 'Playfair-Display';
+  text-align: center;
+  opacity: 0.6;
+}
+
+.experience-work-short .short-div strong {
+  font-size: 2rem;
+  color: #8C0909;
+}
+
+.experience-work-short .short-div h3 {
+  width: 100%;
+  font-size: 1.5rem;
+  color: #8C0909;
+  text-wrap: nowrap;
+}
+
+.booking-details-brief {
+flex-direction: column-reverse;
+}
+
+.booking-details-brief .booking-contents{
+  width: 100%;
+  padding: 30px;
+}
+
+.booking-details-brief .booking-contents h2 {
+  text-wrap: wrap;
+}
+.booking-details-brief .booking-contents strong {
+  font-size: 2rem;
+}
+
+.booking-details-brief .manzett-image-div {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background-color: red; */
+  background-image: url('../images/background/suneffect.svg');
+  /* background-position:right 20px; */
+  background-size: cover;
+}
+
+.booking-details-brief .manzett-image-div .image {
+  height: 100%;
+  width: 100%;
+  /* background-color: green; */
+}
+
+.booking-details-brief .manzett-image-div .image img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.testimonial-main {
+  width: 90%;
+  padding: 20px;
+}
+
+ footer h2 {
+    font-size: 1.4rem;
+    padding: 8px 15px;
+  }
+
+  footer .middle-content-wrapper {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  footer .premium-and-contact-wrapper {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  footer .premimum-services ul,
+  footer .contact-details p {
+    font-size: 1rem;
+    text-wrap: nowrap;
+    text-align: center;
+  }
+
+  footer .social-icons {
+    justify-content: center;
+  }
+
+
+}
+
+
+/* 📲 Tablet (portrait & landscape) */
+@media (min-width: 601px) and (max-width: 1024px) {
+
+  header {
+    padding: 15px 30px;
+  }
+
+  /* Show hamburger on tablets too */
+  .hamburger {
+    display: flex;
+    z-index: 999;
+  }
+
+  .nav-menu {
+    height: 80vh;
+    width: 80%;
+    position: absolute;
+    top: 10%;
+    left: -150%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #F2EEEB;
+    padding: 30px;
+    transition: all 0.3s ease;
+    z-index: 99;
+    border-radius: 10px;
+  }
+
+  .nav-menu.active {
+    left: 10%;
+  }
+
+  .nav-menu ul {
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .nav-menu ul li a {
+    font-size: 1.8rem;
+  }
+
+  /* Hero Section */
+  .heroswipe .hero,
+  .heroswipe .hero-second {
+    height: 70vh;
+    padding: 0 20px;
+    background-size: cover;
+  }
+
+  .heroswipe .hero .hero-content h1 {
+    font-size: 3rem;
+    line-height: 3.5rem;
+  }
+
+  .heroswipe .hero .hero-content h2 {
+    font-size: 2rem;
+    line-height: 2.8rem;
+  }
+
+  .heroswipe .swiper-slide .hero-second h2 {
+    font-size: 2rem;
+  }
+
+  .heroswipe .swiper-slide .hero-second p {
+    font-size: 1.2rem;
+  }
+
+  .heroswipe .hero-second .booking-buttons button {
+    font-size: 1rem;
+    padding: 8px 16px;
+  }
+
+  /* Customer Services */
+  .customer-service .services {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .customer-service .icon-and-text .icon {
+    width: 100px;
+    height: 100px;
+  }
+
+  .customer-service .experence-expertise .short-div {
+    width: 200px;
+    padding: 15px;
+  }
+
+  .customer-service .experence-expertise .short-div h3,
+  .customer-service .experence-expertise .short-div strong {
+    font-size: 1.2rem;
+  }
+
+  /* Know About Section */
+  .know-about-manzett {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .know-about-manzett .content h1 {
+    font-size: 3rem;
+    line-height: 4rem;
+  }
+
+  /* Cards Section */
+  .card-section-guidance .cards-grid-guidance {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    justify-items: center;
+  }
+
+  .card-section-guidance .cards-grid-guidance .card {
+    max-width: 300px;
+    max-height: 300px;
+  }
+
+  /* Experience Section */
+  .experience-work-short {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .experience-work-short .short-div {
+    width: 220px;
+    height: 200px;
+  }
+
+  /* Booking Section */
+  .booking-details-brief {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .booking-details-brief .booking-contents {
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .booking-details-brief .booking-contents strong {
+    font-size: 2.2rem;
+  }
+
+  /* Testimonials */
+  .testimonial-main {
+    width: 95%;
+    padding: 30px;
+  }
+
+  /* Footer */
+  footer h2 {
+    font-size: 1.6rem;
+    padding: 10px 20px;
+  }
+
+  footer .middle-content-wrapper {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    text-align: center;
+  }
+
+  footer .premium-and-contact-wrapper {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+  }
+
+  footer .premimum-services ul,
+  footer .contact-details p {
+    font-size: 1.1rem;
+  }
+
+  footer .social-icons {
+    justify-content: center;
+  }
+}
+
+
+@media screen and (max-width: 1200px) {
+  .hero-content {
+    position: relative;
+  }
+
+  .hero .hero-content h1 {
+    font-size: 3.5rem;
+    margin: 0;
+    padding: 0 10px;
+    text-wrap: nowrap;
+    line-height: 4rem;
+    font-family: 'Playfair-Display-Italic';
+  }
+
+  .hero .hero-content h2 {
+    font-size: 2.5rem;
+  }
+
+  .customer-service .icon-and-text .icon {
+    height: 80px;
+    width: 60px;
+  }
+}
