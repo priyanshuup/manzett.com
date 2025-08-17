@@ -414,11 +414,118 @@
 
   .about-conlusion-section .conslusion-content h2{
    font-size: 1.5rem;
-  font-family: 'Playfair-Display-Italic';
-  color: #F2EEEB;
-  font-weight: 900;
   text-align: center;
   scale: 0.8;
+}
+
+  
+.appointment {
+  padding: 20px 0;
+  overflow: hidden;
+}
+
+
+.appointment .appointment-main h1{
+  font-size: 2.5rem;
+  line-height: 3rem;
+  margin: 0rem;
+  text-align: center;
+}
+
+
+.appointment-main .appointment-content {
+  width: 100%;
+  padding: 10px 15px;
+}
+
+.appointment-main .appointment-content p {
+  font-size: 1.2rem;
+}
+
+.appointment-main .appointment-content strong {
+  font-size: 1.2rem;
+}
+
+
+
+.session-banner-image {
+  height: 100%;
+  width: 100%;
+}
+
+
+.session-importance {
+flex-direction: column;
+}
+
+.session-content {
+  font-size: 1.1rem;
+  padding: 0 15px;
+}
+
+.session-content h2 {
+  font-size: 2.5rem;
+  line-height: 4rem;
+  margin-top: 0;
+}
+
+
+.session-content p {
+  font-size: 1.1rem;
+  margin: 15px 0;
+}
+
+.choose-a-call-content{
+  position: relative;
+  left: 0px;
+}
+
+.choose-a-call h2 {
+  font-size: 2.5rem;
+  line-height: 3.5rem;
+}
+
+.call-benifits {
+  margin: 40px 0;
+}
+
+.call-benifits ul {
+  font-size: 1.2rem;
+}
+
+.call-benifits button {
+  font-size: 1.2rem;
+}
+
+.sessions-conclusion{
+  margin: 50px 0;
+  padding: 25px 15px;
+  text-align: center;
+}
+
+.sessions-conclusion h2 {
+  font-size: 2.5rem;
+}
+
+.sessions-conclusion h3 {
+  font-size: 1.5rem;
+  font-family: 'Playfair-Display';
+  font-weight: 500;
+  margin-top: 20px;
+}
+
+.sessions-conclusion h2 strong {
+  color: #EC2826;
+  font-family: 'Playfair-Display-Italic';
+  font-weight: 800;
+  font-size: 2.5rem;
+}
+
+.sessions-conclusion strong {
+  color: #EC2826;
+  font-family: 'Playfair-Display-Italic';
+  font-weight: 900;
+  font-size: 1.5rem;
 }
 
   footer h2 {
@@ -722,6 +829,7 @@
     text-align: center;
     scale: 0.9;
   }
+
 
   /* Footer */
   footer h2 {
