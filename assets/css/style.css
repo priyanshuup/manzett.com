@@ -740,7 +740,7 @@ padding: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #ffeec4;
+  background-color: #FFF6F1;
   background-image: url('../images/background/7956279.png');
   background-position: center;
   background-size: contain;
@@ -807,12 +807,13 @@ padding: 20px;
   height: 220px;
   width: 240px;
   border-radius: 10px;
-  background-color: #ffeec4;
+  background-color: #F2EFEA;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   font-family: 'Playfair-Display';
+box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
   text-align: center;
   opacity: 0.6;
 }
@@ -846,12 +847,12 @@ padding: 20px;
 }
 
 .booking-details-brief .booking-contents button {
-  background-color: #D4B669;
+  background-color: #8C0909;
   margin: 20px 0;
   padding: 4px 40px;
   font-size: 1.5rem;
   font-weight: 900;
-  color: #8C0909;
+  color: #F2EEEB;
   border-radius: 2px;
   font-family: 'Playfair-Display-Italic';
   border: none;
