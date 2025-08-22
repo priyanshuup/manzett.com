@@ -749,7 +749,7 @@ padding: 20px;
   align-items: center;
   justify-content: center;
   background-color: #FFF6F1;
-  background-image: url('../images/background/7956279.png');
+  background-image: url('../images/background/bg-image-box.png');
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -1566,7 +1566,7 @@ font-size: 1.5rem;
   width: 300px;
   margin: 40px 0;
   background-color: #8C0909;
-  border: 2px solid #D4B669;
+  border: 2px solid #FFF6F1;
   border-radius: 10px;
 }
 
@@ -1574,7 +1574,7 @@ font-size: 1.5rem;
   font-size: 1.2rem;
   font-family: 'Playfair-Display';
   font-weight: 800;
-  color: #D4B669;
+  color: #FFF6F1;
 }
 
 .sessions-conclusion {
@@ -1682,7 +1682,7 @@ font-size: 1.5rem;
   font-size:4rem;
   font-family: 'Playfair-Display-Italic';
   font-weight: 900;
-  color: #D4B669;
+  color: #FFF6F1;
   line-height: 4rem;
   z-index: 999;
 }
@@ -1698,7 +1698,7 @@ font-size: 1.5rem;
   font-size: 5.5rem;
   font-family: 'Playfair-Display-Italic';
   font-weight: 600;
-  color: #D4B669;
+  color: #FFF6F1;
   line-height: 7rem;
   z-index: 999;
 }
@@ -1709,7 +1709,7 @@ font-size: 1.5rem;
 }
 
 .services-book-now-btn button {
-  background-color: #D4B669;
+  background-color: #FFF6F1;
   padding: 4px 40px;
   font-size: 1.5rem;
   font-weight: 900;
@@ -2037,6 +2037,7 @@ justify-content: center;
    font-size: 3rem;
   margin: 10px;
   color: #8C0909;
+  color: #D4B669;
   font-weight: bolder;
   font-family: 'Playfair-Display';
 }

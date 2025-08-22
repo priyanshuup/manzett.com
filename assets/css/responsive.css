@@ -132,7 +132,6 @@
     width: 160px;
     padding: 10px;
     font-family: 'Playfair-Display';
-    background-color: #D4B669;
     border-radius: 10px;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   }
@@ -527,7 +526,7 @@ flex-direction: column;
   font-size:2rem;
   font-family: 'Playfair-Display-Italic';
   font-weight: 900;
-  color: #D4B669;
+  color: #FFF6F1;
   line-height: 3rem;
 }
 
@@ -541,7 +540,7 @@ flex-direction: column;
   font-size: 3rem;
   font-family: 'Playfair-Display-Italic';
   font-weight: 600;
-  color: #D4B669;
+  color: #FFF6F1;
   line-height: 4rem;
   text-wrap: nowrap;
 }
