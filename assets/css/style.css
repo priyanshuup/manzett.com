@@ -179,8 +179,8 @@ body.no-scroll {
 
 
 
-.book-now-btn {
-  background: linear-gradient(to right, #EC2826, #8C0909);
+.book-now-btn, .book-now-btn-header{
+  background: #8C0909;
   color: #FFF6F1;
   border: none;
   padding: 10px 20px;
@@ -194,7 +194,11 @@ body.no-scroll {
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-.book-now-btn:hover {
+.book-now-btn-header{
+  background: linear-gradient(to right, #EC2826, #8C0909);
+}
+
+.book-now-btn:hover, .book-now-btn-header:hover{
   transform: translateY(-2px);
   box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
 }
@@ -498,7 +502,7 @@ padding: 20px;
 }
 
 .customer-service .services {
-  height: 50%;
+  min-height: 270px;
   width: 90%;
   display: flex;
   align-items: center;
@@ -526,6 +530,7 @@ padding: 20px;
   font-family: 'Playfair-Display';
   /* text-wrap: nowrap; */
   color: #FFF6F1;
+  text-wrap: nowrap;
 }
 
 .customer-service .icon-and-text h3 strong {
@@ -567,7 +572,7 @@ padding: 20px;
   width: 250px;
   padding: 20px;
   font-family: 'Playfair-Display';
-  background-color: #D4B669;
+  background-color: #FFF6F1;
   border-radius: 10px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
@@ -696,6 +701,7 @@ padding: 20px;
   font-family: "Playfair-Display";
   color: #8C0909;
   font-weight: 800;
+  margin: 10px 0;
   text-wrap: wrap;
 }
 
@@ -728,6 +734,8 @@ padding: 20px;
   gap: 40px; /* reduce gap a bit */
   width: 100%;
   padding: 10px 15px;
+  position: relative;
+  margin-bottom: 40px;
 }
 
 
@@ -975,7 +983,7 @@ footer h2 {
   position: relative;
   top: -5vh;
   font-size: 1.8rem;
-  background-color: #ffeec4;
+  background-color: #FFF6F1;
   color: #8C0909;
   padding: 10px 20px;
   font-weight: bolder;
@@ -1178,12 +1186,24 @@ font-size: 1.5rem;
   width: 100%;
   display: flex;
   align-items: center;
-  justify-content: flex-end;
-  background-image: url('../images/background/about-2.jpg');
+  justify-content: space-around;
+  background-image: url('../images/background/about-bg-with-pattern.jpg');
   background-repeat: no-repeat;
   background-position: center;
-  background-size: contain;
+  background-size: cover;
   overflow: hidden;
+}
+
+.trust-manzett-koushal-img{
+  /* height: 400px; */
+  width: 450px;
+}
+
+.trust-manzett-koushal-img img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
 }
 
 .trust-manzett-koushal .trust-content-section{
@@ -1215,10 +1235,10 @@ font-size: 1.5rem;
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  background-image: url('../images/background/about-3.jpg');
+  background-image: url('../images/background/about-bg-with-pattern.jpg');
   background-position: center;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   padding: 30px;
 }
 
@@ -1241,7 +1261,7 @@ font-size: 1.5rem;
   margin: 10px 0;
 }
 .struggling-in-life-section .struggling-content .struggling-sub-contents strong{
-  font-size: 1rem;
+  font-size: 1.2rem;
   font-family: 'Playfair-Display';
   color: #8C0909;
   font-weight: bolder;
@@ -1253,7 +1273,7 @@ font-size: 1.5rem;
   font-family: 'Playfair-Display';
   color: #8C0909;
   font-weight: 400;
-line-height: 1rem;
+/* line-height: 1rem; */
 }
 
 .about-conlusion-section {
@@ -1478,7 +1498,7 @@ line-height: 1rem;
 }
 
 .choose-a-call h2 strong {
-  color: #D4B669;
+  color: #EC2826;
   font-family: 'Playfair-Display-Italic';
   font-weight: bolder;
 }
@@ -1505,7 +1525,8 @@ line-height: 1rem;
 
 .call-benifits button {
   margin-top: 35px;
-  background-color: #D4B669;
+  background-color: #FFF6F1;
+  color: #8C0909;
   padding: 8px 40px;
   font-size: 1.5rem;
   font-weight: 900;
@@ -1653,7 +1674,7 @@ line-height: 1rem;
   background-size: cover;
   background-position: center;
   filter: grayscale(100%) brightness(0);
-  opacity: 0.5;
+  opacity: 0.3;
   z-index: 1;
 }
 
@@ -1663,12 +1684,14 @@ line-height: 1rem;
   font-weight: 900;
   color: #D4B669;
   line-height: 4rem;
+  z-index: 999;
 }
 
 .services-content h1 span {
   font-family: 'Playfair-Display';
   font-weight: 300;
   color: #F2EEEB;
+  z-index: 999;
 }
 
 .services-content h2 {
@@ -1677,6 +1700,7 @@ line-height: 1rem;
   font-weight: 600;
   color: #D4B669;
   line-height: 7rem;
+  z-index: 999;
 }
 
 .services-content .services-book-now-btn{
@@ -1806,10 +1830,6 @@ line-height: 1rem;
   height: 600px;
   width: 500px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    background-image: url('../images/background/7956279.png');
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
   scale: 0.6;
   display: flex;
   align-items: center;
@@ -1823,15 +1843,20 @@ line-height: 1rem;
 
 .core-service-card:nth-child(4n+1),
 .core-service-card:nth-child(4n) {
-  background-color: #8C0909;
+  background-image: url('../images/background/bg-card-maroon.png');
+    background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
   color: #F2EEEB;
-  /* Color A for 1st and 4th */
 }
 
 .core-service-card:nth-child(4n+2),
 .core-service-card:nth-child(4n+3) {
-  background-color: #fedcb0;
-  /* Color B for 2nd and 3rd */
+  background-image: url('../images/background/bg-card-white.png');
+    background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  color: #8C0909;
 }
 
 
@@ -1918,7 +1943,7 @@ line-height: 1rem;
 
 
 .contact{
-min-height: 40vh;
+min-height: 80vh;
 width: 100%;
 display: flex;
 align-items: center;
@@ -1927,7 +1952,7 @@ justify-content: center;
 
 .contact-hero{
   width: 100%;
-  height: 90%;
+  height: 100%;
   display: flex;
   align-items: flex-start;
   justify-content: center;
@@ -1939,21 +1964,28 @@ justify-content: center;
 }
 
 .contact-hero-content{
-  padding: 0 80px;
+  /* padding: 0 80px; */
+  min-height: 400px;
   color: #F2EEEB;
   text-align: center;
   font-family: 'Playfair-Display';
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  left: 80px;
 }
 
 .contact-hero-content h1{
   font-weight: bolder;
-  font-size: 3.5rem;
+  font-size: 3rem;
   line-height: 4rem;
 }
 
 .contact-hero-content h2{
   font-weight: 300;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   margin: 15px 0;
   scale: 0.4;
   opacity: 0.3;
@@ -1967,15 +1999,15 @@ justify-content: center;
 .contact-schedule-button{
   text-align: center;
   font-weight: bolder;
-  font-size: 3rem;
+  font-size: 2.5rem;
   margin: 10px;
   cursor: pointer;
   font-family: 'Playfair-Display';
-  background-color: #8C0909;
-  color: #F2EEEB;
+  background-color: #FFF6F1;
+  color: #8C0909;
   padding: 15px 50px;
- box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-  border-radius: 50px;
+ box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+  border-radius: 10px;
   border: none;
 
 }
@@ -1991,7 +2023,7 @@ justify-content: center;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 0 20px;
+  padding: 0 25px;
   overflow: hidden;
 }
 
@@ -2088,7 +2120,7 @@ justify-content: center;
 }
 
 .faq-question:hover {
-  background: #fedcb0;
+  background: #F2EFEA;
 }
 
 .arrow {

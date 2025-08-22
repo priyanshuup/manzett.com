@@ -363,17 +363,17 @@ function animateContact(){
     ease: "power2.out"
   });
 
-  gsap.to(".contact-schedule-button", {
-  scrollTrigger: {
-    trigger: ".session-booking", // or any earlier trigger if you want it to happen before reaching the button
-    start: "top 70%",
-    toggleActions: "play reverse play reverse",
-  },
-  backgroundColor: "#ceaf56", 
-  color: "#8C0909",
-  duration: 0.5,
-  ease: "power2.out"
-});
+//   gsap.to(".contact-schedule-button", {
+//   scrollTrigger: {
+//     trigger: ".session-booking", // or any earlier trigger if you want it to happen before reaching the button
+//     start: "top 70%",
+//     toggleActions: "play reverse play reverse",
+//   },
+//   backgroundColor: "#ceaf56", 
+//   color: "#8C0909",
+//   duration: 0.5,
+//   ease: "power2.out"
+// });
 
     gsap.from(".map-content", {
     scrollTrigger: {
