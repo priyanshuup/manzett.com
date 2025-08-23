@@ -345,7 +345,7 @@
   }
 
   .trust-manzett-koushal {
-    height: 80vh;
+    min-height: 80vh;
     justify-content: center;
     flex-direction: column;
     background-image: none;
@@ -374,6 +374,7 @@
     min-height: 100vh;
     background-image: none;
     padding: 10px;
+    flex-direction: column;
   }
 
   .struggling-in-life-section .struggling-content {
@@ -616,8 +617,10 @@ flex-direction: column;
 
 
 .core-services-wrapper .core-service-card {
-  height: 300px;
-  width: 300px;
+   min-height: 400px;
+  min-width: 300px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  scale: 1;
 }
 
 .core-service-card h1{
@@ -658,6 +661,10 @@ flex-direction: column;
   text-wrap: nowrap
 }
 
+.contact{
+  min-height: 60vh;
+}
+
 .contact-hero{
   width: 100%;
   height: 90%;
@@ -668,6 +675,7 @@ flex-direction: column;
 
 .contact-hero-content{
   padding: 0 20px;
+  left: 0;
 }
 
 .contact-hero-content h1{
@@ -979,7 +987,7 @@ flex-direction: column;
   .about-main-content,
   .wisdom-main-content {
     padding: 20px;
-    background-size: contain;
+    background-size: cover;
   }
 
   .about-main-content .about-main-header h2,

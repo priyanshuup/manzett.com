@@ -1114,6 +1114,7 @@ footer .footer-container .middle-content-wrapper .contact-details p {
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
+  overflow: hidden;
 }
 .about .about-content{
   text-align: center;
@@ -1134,6 +1135,7 @@ footer .footer-container .middle-content-wrapper .contact-details p {
 }
 
 .about-main-content, .wisdom-main-content{
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1142,6 +1144,8 @@ footer .footer-container .middle-content-wrapper .contact-details p {
   background-image: url('../images/background/stars.jpg');
   background-position: bottom;
   background-size: cover;
+  background-repeat: no-repeat;
+  overflow: hidden;
 }
 .about-main-content .about-main-header h2, .wisdom-main-content .wisdom-main-header h2{
 font-size: 2.5rem;
@@ -1182,7 +1186,7 @@ font-size: 1.5rem;
 }
 
 .trust-manzett-koushal{
-  height: 100vh;
+  min-height: 100vh;
   width: 100%;
   display: flex;
   align-items: center;
@@ -1195,11 +1199,22 @@ font-size: 1.5rem;
 }
 
 .trust-manzett-koushal-img{
-  /* height: 400px; */
+  /* height: 450px; */
   width: 450px;
 }
 
 .trust-manzett-koushal-img img{
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+  object-position: center;
+}
+.struggling-in-life-img{
+  height: 600px;
+  width: 450px;
+}
+
+.struggling-in-life-img img{
   height: 100%;
   width: 100%;
   object-fit: cover;
@@ -1240,6 +1255,7 @@ font-size: 1.5rem;
   background-repeat: no-repeat;
   background-size: cover;
   padding: 30px;
+  overflow: hidden;
 }
 
 .struggling-in-life-section .struggling-content{
@@ -1513,27 +1529,48 @@ font-size: 1.5rem;
 }
 
 .call-benifits {
-  margin: 40px 0;
+    margin: 40px 0;
 }
 
-.call-benifits ul {
-  font-family: 'Playfair-Display';
-  color: #F2EEEB;
-  font-size: 1.2rem;
-  list-style: none;
+.call-benifits-list {
+    font-family: 'Playfair Display', serif;
+    color: #F2EEEB;
+    font-size: 1.2rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
-.call-benifits button {
-  margin-top: 35px;
-  background-color: #FFF6F1;
-  color: #8C0909;
-  padding: 8px 40px;
-  font-size: 1.5rem;
-  font-weight: 900;
-  border-radius: 5px;
-  font-family: 'Playfair-Display-Italic';
-  border: none;
-  cursor: pointer;
+.call-benifits-list li {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 15px;
+    line-height: 1.4;
+}
+
+.call-benifits-list li .icon {
+    color: #FFF6F1;
+    font-size: 1.3rem;
+    margin-right: 12px;
+    flex-shrink: 0; /* Prevents the icon from shrinking */
+    margin-top: 2px; /* Fine-tune vertical alignment */
+}
+
+.call-benifits-list li .content {
+    flex: 1; /* Takes up remaining space */
+}
+
+.consult-now-btn {
+    margin-top: 35px;
+    background-color: #FFF6F1;
+    color: #8C0909;
+    padding: 8px 40px;
+    font-size: 1.5rem;
+    font-weight: 900;
+    border-radius: 5px;
+    font-family: 'Playfair Display', serif;
+    border: none;
+    cursor: pointer;
 }
 
 .consultaion-pricing {
@@ -1684,23 +1721,23 @@ font-size: 1.5rem;
   font-weight: 900;
   color: #FFF6F1;
   line-height: 4rem;
-  z-index: 999;
+  z-index: 9;
 }
 
 .services-content h1 span {
   font-family: 'Playfair-Display';
   font-weight: 300;
   color: #F2EEEB;
-  z-index: 999;
+  z-index: 9;
 }
 
 .services-content h2 {
   font-size: 5.5rem;
   font-family: 'Playfair-Display-Italic';
   font-weight: 600;
-  color: #FFF6F1;
+  color: #D4B669;
   line-height: 7rem;
-  z-index: 999;
+  z-index: 9;
 }
 
 .services-content .services-book-now-btn{
@@ -1738,8 +1775,9 @@ font-size: 1.5rem;
 }
 
 .services-banner-image {
-  height: 600px;
+  height: 100%;
   width: 500px;
+  margin: 40px 0;
 }
 
 .services-banner-image img {
@@ -1827,10 +1865,10 @@ font-size: 1.5rem;
 
 
 .core-services-wrapper .core-service-card {
-  height: 600px;
-  width: 500px;
+  min-height: 600px;
+  min-width: 450px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  scale: 0.6;
+  scale: 1;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -2004,9 +2042,9 @@ justify-content: center;
   cursor: pointer;
   font-family: 'Playfair-Display';
   background-color: #FFF6F1;
-  color: #8C0909;
+  color: #EC2826;
   padding: 15px 50px;
- box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+ box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
   border-radius: 10px;
   border: none;
 
@@ -2018,7 +2056,7 @@ justify-content: center;
 }
 
 .map-location{
-  height: 100vh;
+  min-height: 100vh;
   width: 100%;
   display: flex;
   align-items: center;
@@ -2037,7 +2075,6 @@ justify-content: center;
    font-size: 3rem;
   margin: 10px;
   color: #8C0909;
-  color: #D4B669;
   font-weight: bolder;
   font-family: 'Playfair-Display';
 }
@@ -2068,6 +2105,47 @@ justify-content: center;
 .map-location .map iframe{
   border-radius: 25px;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.how-it-works-details {
+    margin: 40px 0;
+}
+
+.how-it-works-list {
+    font-family: 'Playfair Display', serif;
+    color: #8C0909;
+    font-size: 1.2rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.how-it-works-list li {
+    margin-bottom: 20px;
+    line-height: 1.4;
+    position: relative;
+    padding-left: 60px; /* Space for the icon (icons are larger than text ticks) */
+    min-height: 40px; /* Minimum height to accommodate icons */
+}
+
+.how-it-works-list li .icon {
+    position: absolute;
+    left: 0;
+    top: 2px; /* Slight adjustment for better alignment */
+    width: 40px;
+    height: 40px;
+    display: block;
+}
+
+.how-it-works-list li .icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* Ensures icons scale properly */
+}
+
+.how-it-works-list li .content {
+    display: block;
+    padding-top: 5px; /* Slight padding for better vertical alignment with icons */
 }
 
 .faq-review-section {

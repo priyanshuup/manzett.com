@@ -295,16 +295,16 @@ function animateServices(){
     duration: 1,
     ease: "power2.out"
   });
-    gsap.to(".core-service-card", {
-    scrollTrigger: {
-      trigger: ".core-service-card", // ✅ use class since your section has class
-      start: "top 70%",
-      toggleActions: "play reverse play reverse",
-    },
-   scale: 1,
-    duration: 1,
-    ease: "power2.out"
-  });
+  //   gsap.to(".core-service-card", {
+  //   scrollTrigger: {
+  //     trigger: ".core-service-card", // ✅ use class since your section has class
+  //     start: "top 70%",
+  //     toggleActions: "play reverse play reverse",
+  //   },
+  //  scale: 1,
+  //   duration: 1,
+  //   ease: "power2.out"
+  // });
 
      gsap.from(".how-it-works h2", {
     scrollTrigger: {
